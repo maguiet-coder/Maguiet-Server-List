@@ -1,55 +1,63 @@
-// Menú desplegable de la web.
-// Para añadir una sección nueva en el futuro, añade una línea a esta lista
-// y crea la página correspondiente (el menú se actualiza solo en todas).
-const SECCIONES = [
-  { nombre: "Lista", href: "index.html" },
-  { nombre: "Leaderboard", href: "leaderboard.html" }
-];
+// Código común a todas las páginas: menú lateral y utilidades.
+const SECCIONES = [["Lista","index.html"],["Leaderboard","leaderboard.html"],["Packs","packs.html"],["Normas","normas.html"],["Editar","anadir-nivel.html"]];
 
-(function () {
-  const cont = document.getElementById("site-nav");
-  if (!cont) return;
+function videoId(v) {
+  const t = String(v || "").trim();
+  if (/^[\w-]{11}$/.test(t)) return t;
+  const m = t.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([\w-]{11})/);
+  return m ? m[1] : "";
+}
+const slug = (t) => String(t).toLowerCase().trim().replace(/\s+/g, "-");
+const conCorona = (n) => (n.trim().toLowerCase() === "maguiet" ? n + " 👑🐸" : n);
 
+function crearBadge(d) {
+  const b = document.createElement("span");
+  b.className = "badge";
+  b.textContent = d;
+  b.dataset.level = slug(d);
+  return b;
+}
+
+function copiar(texto, hecho) {
+  const respaldo = () => {
+    const t = document.createElement("textarea");
+    t.value = texto;
+    document.body.appendChild(t);
+    t.select();
+    try { document.execCommand("copy"); hecho(); } catch (e) {}
+    t.remove();
+  };
+  if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(texto).then(hecho, respaldo);
+  else respaldo();
+}
+
+(function menu() {
   const actual = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-  const seccionActual = SECCIONES.find((s) => s.href === actual) || SECCIONES[0];
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "nav-btn";
+  btn.setAttribute("aria-label", "Abrir menú");
+  btn.setAttribute("aria-expanded", "false");
+  btn.innerHTML = "<span></span><span></span><span></span>";
 
-  const boton = document.createElement("button");
-  boton.type = "button";
-  boton.className = "nav-btn";
-  boton.setAttribute("aria-expanded", "false");
-  boton.setAttribute("aria-controls", "nav-menu");
-  const etiqueta = document.createElement("span");
-  etiqueta.textContent = seccionActual.nombre;
-  const flecha = document.createElement("span");
-  flecha.className = "nav-caret";
-  flecha.setAttribute("aria-hidden", "true");
-  boton.append(etiqueta, flecha);
-
-  const menu = document.createElement("ul");
-  menu.className = "nav-menu";
-  menu.id = "nav-menu";
-  menu.hidden = true;
-
-  SECCIONES.forEach((s) => {
-    const li = document.createElement("li");
+  const panel = document.createElement("nav");
+  panel.className = "nav-panel";
+  panel.setAttribute("aria-label", "Secciones de la web");
+  const titulo = document.createElement("p");
+  titulo.className = "nav-title";
+  titulo.textContent = "Maguiet Server List";
+  panel.appendChild(titulo);
+  SECCIONES.forEach(([nombre, href]) => {
     const a = document.createElement("a");
-    a.href = s.href;
-    a.textContent = s.nombre;
-    if (s === seccionActual) a.setAttribute("aria-current", "page");
-    li.appendChild(a);
-    menu.appendChild(li);
+    a.href = href;
+    a.textContent = nombre;
+    if (href === actual) a.setAttribute("aria-current", "page");
+    panel.appendChild(a);
   });
 
-  function abrir(abierto) {
-    menu.hidden = !abierto;
-    boton.setAttribute("aria-expanded", String(abierto));
-  }
-
-  boton.addEventListener("click", () => abrir(menu.hidden));
-  document.addEventListener("click", (e) => { if (!cont.contains(e.target)) abrir(false); });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !menu.hidden) { abrir(false); boton.focus(); }
-  });
-
-  cont.append(boton, menu);
+  const abrir = (o) => { panel.classList.toggle("open", o); btn.setAttribute("aria-expanded", String(o)); };
+  btn.addEventListener("click", (e) => { e.stopPropagation(); abrir(!panel.classList.contains("open")); });
+  document.addEventListener("click", (e) => { if (!panel.contains(e.target)) abrir(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") abrir(false); });
+  document.body.append(btn, panel);
 })();

@@ -1,51 +1,21 @@
-// Este archivo dibuja la lista a partir de niveles.js. No hace falta tocarlo.
-
-const list = document.getElementById("level-list");
-const emptyMsg = document.getElementById("list-empty");
-const dialog = document.getElementById("level-dialog");
+// Dibuja la lista a partir de niveles.js. No hace falta tocarlo.
+const $ = (id) => document.getElementById(id);
+const lista = $("level-list"), vacio = $("list-empty"), dialog = $("level-dialog"), buscar = $("buscar");
 const els = {
-  video: document.getElementById("dlg-video"),
-  yt: document.getElementById("dlg-yt"),
-  rank: document.getElementById("dlg-rank"),
-  name: document.getElementById("dlg-name"),
-  points: document.getElementById("dlg-points"),
-  difficulty: document.getElementById("dlg-difficulty"),
-  creator: document.getElementById("dlg-creator"),
-  id: document.getElementById("dlg-id"),
-  copy: document.getElementById("dlg-copy"),
-  board: document.getElementById("dlg-leaderboard"),
-  empty: document.getElementById("dlg-empty"),
-  close: document.getElementById("dlg-close")
+  video: $("dlg-video"), yt: $("dlg-yt"), rank: $("dlg-rank"), name: $("dlg-name"), points: $("dlg-points"),
+  difficulty: $("dlg-difficulty"), creator: $("dlg-creator"), id: $("dlg-id"), copy: $("dlg-copy"),
+  board: $("dlg-leaderboard"), empty: $("dlg-empty"), close: $("dlg-close")
 };
 
-// Acepta un enlace de YouTube en cualquier formato, o el código suelto
-function videoId(valor) {
-  const texto = String(valor || "").trim();
-  if (/^[A-Za-z0-9_-]{11}$/.test(texto)) return texto;
-  const m = texto.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([A-Za-z0-9_-]{11})/);
-  return m ? m[1] : "";
-}
-
-function slugify(texto) {
-  return String(texto).toLowerCase().trim().replace(/\s+/g, "-");
-}
-
-function crearBadge(dificultad) {
-  const b = document.createElement("span");
-  b.className = "badge";
-  b.textContent = dificultad;
-  b.dataset.level = slugify(dificultad);
-  return b;
-}
-
-function renderList() {
-  if (!Array.isArray(NIVELES) || NIVELES.length === 0) {
-    emptyMsg.hidden = false;
-    return;
-  }
+function dibujar(filtro) {
+  lista.replaceChildren();
+  const q = (filtro || "").trim().toLowerCase();
+  let mostrados = 0;
 
   NIVELES.forEach((nivel, i) => {
-    const puesto = i + 1; // el puesto lo decide el orden en niveles.js
+    const puesto = i + 1; // el puesto lo decide el orden de la lista
+    if (q && ![nivel.nombre, nivel.creador, nivel.id].join(" ").toLowerCase().includes(q)) return;
+    mostrados++;
     const vid = videoId(nivel.video);
 
     const li = document.createElement("li");
@@ -83,24 +53,26 @@ function renderList() {
     pts.textContent = `${nivel.puntos} pts`;
 
     card.append(thumb, info, pts);
-    card.addEventListener("click", () => abrirNivel(nivel, puesto));
+    card.addEventListener("click", () => abrir(nivel, puesto));
     li.appendChild(card);
-    list.appendChild(li);
+    lista.appendChild(li);
   });
+
+  vacio.hidden = mostrados > 0;
+  vacio.textContent = NIVELES.length ? "Ningún nivel coincide con la búsqueda." : "Aún no hay niveles en la lista.";
 }
 
-function abrirNivel(nivel, puesto) {
-  // El vídeo se carga solo al abrir el menú
+function abrir(nivel, puesto) {
   els.video.replaceChildren();
   const vid = videoId(nivel.video);
-  els.video.hidden = !vid;
-  els.yt.hidden = !vid;
-  if (vid) els.yt.href = `https://www.youtube.com/watch?v=${vid}`;
+  els.video.hidden = els.yt.hidden = !vid;
   if (vid) {
+    els.yt.href = `https://www.youtube.com/watch?v=${vid}`;
     const iframe = document.createElement("iframe");
-    iframe.src = `https://www.youtube.com/embed/${vid}`;
+    iframe.src = `https://www.youtube.com/embed/${vid}?rel=0`;
     iframe.title = `Vídeo de ${nivel.nombre}`;
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
     iframe.allowFullscreen = true;
     els.video.appendChild(iframe);
   }
@@ -109,8 +81,8 @@ function abrirNivel(nivel, puesto) {
   els.name.textContent = nivel.nombre;
   els.points.textContent = `${nivel.puntos} pts`;
   els.difficulty.textContent = nivel.dificultad;
-  els.difficulty.dataset.level = slugify(nivel.dificultad);
-  els.creator.textContent = nivel.creador;
+  els.difficulty.dataset.level = slug(nivel.dificultad);
+  els.creator.textContent = nivel.creador; // como creador no lleva corona
   els.id.textContent = nivel.id;
   els.copy.textContent = "Copiar ID";
   els.copy.onclick = () => copiar(String(nivel.id), () => { els.copy.textContent = "ID copiado"; });
@@ -119,47 +91,26 @@ function abrirNivel(nivel, puesto) {
   els.board.replaceChildren();
   jugadores.forEach((j, i) => {
     const li = document.createElement("li");
-    const izquierda = document.createElement("span");
+    const izq = document.createElement("span");
     const pos = document.createElement("span");
     pos.className = "pos";
     pos.textContent = `${i + 1}.`;
-    izquierda.append(pos, document.createTextNode(j.jugador));
+    izq.append(pos, document.createTextNode(conCorona(j.jugador)));
     const fecha = document.createElement("span");
     fecha.className = "date";
     fecha.textContent = j.fecha || "";
-    li.append(izquierda, fecha);
+    li.append(izq, fecha);
     els.board.appendChild(li);
   });
   els.empty.hidden = jugadores.length > 0;
-
   dialog.showModal();
 }
 
-function copiar(texto, hecho) {
-  const respaldo = () => {
-    const t = document.createElement("textarea");
-    t.value = texto;
-    document.body.appendChild(t);
-    t.select();
-    try { document.execCommand("copy"); hecho(); } catch (e) {}
-    t.remove();
-  };
-  if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(texto).then(hecho, respaldo);
-  } else {
-    respaldo();
-  }
-}
-
-// Al cerrar el menú se quita el vídeo para que deje de sonar
-dialog.addEventListener("close", () => els.video.replaceChildren());
+dialog.addEventListener("close", () => els.video.replaceChildren()); // el vídeo deja de sonar
 els.close.addEventListener("click", () => dialog.close());
-
-// Click fuera del recuadro cierra el menú
 dialog.addEventListener("click", (e) => {
   const r = dialog.getBoundingClientRect();
-  const fuera = e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
-  if (fuera) dialog.close();
+  if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close();
 });
-
-renderList();
+buscar.addEventListener("input", () => dibujar(buscar.value));
+dibujar("");
