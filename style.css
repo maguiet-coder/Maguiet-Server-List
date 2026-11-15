@@ -1,8 +1,8 @@
 :root {
-  --bg-top: #121214;
-  --bg-bottom: #1f1f23;
-  --card: #2a2a2f;
-  --card-hover: #323238;
+  --bg-top: #242428;
+  --bg-bottom: #1b1b1e;
+  --card: #303036;
+  --card-hover: #393940;
   --deep: #1a1a1d;
   --line: #3e3e45;
   --text: #f4eee8;
@@ -17,7 +17,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { min-height: 100%; background: var(--bg-top); }
+html { min-height: 100%; background: var(--bg-bottom); }
 
 body {
   margin: 0;
@@ -541,3 +541,104 @@ main {
 .normas ul { margin: 0; padding-left: 1.3rem; line-height: 1.7; }
 .normas li { margin-bottom: 0.6rem; }
 .normas ul ul { margin-top: 0.5rem; }
+
+/* ---------- Hub ---------- */
+
+.hub { display: grid; gap: 1.2rem; }
+
+.hub-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 220px;
+  padding: 2rem 2.2rem;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #ff9a3d 0%, #e8641c 60%, #b8430f 100%);
+  color: #1a1a1d;
+  text-decoration: none;
+  box-shadow: 0 14px 40px rgba(232, 100, 28, 0.3);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.hub-main:hover { transform: translateY(-3px); box-shadow: 0 18px 48px rgba(232, 100, 28, 0.45); }
+
+.hub-main strong {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.9rem, 6vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.hub-main span { font-size: 1.1rem; font-weight: 500; }
+
+.hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
+
+.hub-btn {
+  display: grid;
+  gap: 0.2rem;
+  padding: 1.1rem 1.3rem;
+  border: 1.5px solid var(--line);
+  border-radius: 22px;
+  background: var(--card);
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.15s, transform 0.15s, background 0.15s;
+}
+
+.hub-btn:hover { border-color: var(--orange); background: var(--card-hover); transform: translateY(-2px); }
+.hub-btn strong { font-family: var(--font-display); font-size: 1.3rem; color: var(--orange); }
+.hub-btn span { color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Editor privado ---------- */
+
+.tool {
+  display: grid;
+  gap: 1rem;
+  padding: 1.4rem;
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 26px;
+}
+
+.tool[hidden], #panel[hidden] { display: none; }
+.tool label { display: grid; gap: 0.3rem; font-weight: 700; }
+
+.tool input, .tool select, .tool textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--deep);
+  color: var(--text);
+  font: 400 1rem var(--font-body);
+}
+
+.tool input:focus, .tool select:focus, .tool textarea:focus { outline: 2px solid var(--orange); border-color: var(--orange); }
+.tool .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.tool label.chk { display: flex; align-items: center; gap: 0.5rem; font-weight: 400; }
+.tool label.chk input { width: auto; }
+.tool details summary { cursor: pointer; color: var(--orange); }
+.tool-title { margin: 2rem 0 0.8rem; font-family: var(--font-display); font-size: 1.5rem; }
+.ed-list { display: grid; gap: 1rem; margin-bottom: 1rem; }
+.ed-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.ed-acc, .acciones { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+.steps { margin: 0.6rem 0 0; padding-left: 1.3rem; color: var(--muted); }
+.steps strong { color: var(--text); }
+
+.primary {
+  justify-self: start;
+  padding: 0.6rem 1.4rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #1a1a1d;
+  font: 700 1rem var(--font-body);
+  cursor: pointer;
+}
+
+.primary:hover { background: #ffa04d; }
+
+@media (max-width: 560px) { .tool .row { grid-template-columns: 1fr; } }
