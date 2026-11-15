@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos - Maguiet Server List</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pestanas { display: flex; gap: 10px; margin: 20px 0; }
+    .pestanas button {
+      padding: 10px 18px; border: none; border-radius: 8px;
+      cursor: pointer; font-size: 1rem; opacity: 0.6;
+    }
+    .pestanas button.activa { opacity: 1; font-weight: bold; }
+    .evento { padding: 14px; margin: 12px 0; border-radius: 10px; background: rgba(255,255,255,0.08); }
+    .evento h3 { margin: 0 0 6px; }
+    #contenido-eventos { max-width: 800px; margin: 0 auto; padding: 20px; }
+  </style>
+</head>
+<body>
+  <script src="nav.js"></script>
+
+  <div id="contenido-eventos">
+    <h1>Eventos</h1>
+
+    <div class="pestanas">
+      <button id="tab-activos">Eventos Activos</button>
+      <button id="tab-concluidos">Eventos Concluidos</button>
+    </div>
+
+    <div id="eventos-activos"></div>
+    <div id="eventos-concluidos"></div>
+  </div>
+
+  <script src="eventos.js"></script>
+</body>
+</html>
