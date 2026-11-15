@@ -14,9 +14,14 @@
 //  DIFICULTADES: Easy Demon, Medium Demon, Hard Demon, Insane Demon, Extreme Demon
 //  VÍDEO: pega el enlace de YouTube tal cual, sirve cualquier formato.
 //
-//  AÑADIR A ALGUIEN A LA LEADERBOARD
-//  Dentro de "leaderboard" de ese nivel, añade una línea con este formato:
+//  AÑADIR A ALGUIEN A LA LEADERBOARD DE UN NIVEL
+//  En "anadir-nivel.html" hay un segundo formulario (Añadir récord) que te da la línea
+//  ya hecha. Pégala dentro de "leaderboard" de ese nivel. Formato:
 //      { jugador: "Nombre", fecha: "15/11/2026" },
+//  La fecha es opcional. El orden es el de llegada: el primero en pasárselo va arriba.
+//
+//  LA LEADERBOARD GENERAL (página "Leaderboard") se calcula sola: suma los puntos de
+//  todos los niveles que ha completado cada jugador. Escribe el nombre siempre igual.
 // =====================================================================
 
 const NIVELES = [
@@ -28,6 +33,7 @@ const NIVELES = [
     puntos: 200,
     dificultad: "Hard Demon",
     leaderboard: [
+      { jugador: "Maguiet" },
     ]
   },
 

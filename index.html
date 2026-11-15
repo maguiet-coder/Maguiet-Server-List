@@ -13,8 +13,13 @@
 </head>
 <body>
   <header class="site-header">
-    <h1>Maguiet Server List</h1>
-    <p class="tagline">Los niveles más duros, ordenados por puesto.</p>
+    <div class="header-row">
+      <div>
+        <h1>Maguiet Server List</h1>
+        <p class="tagline">Los niveles más duros, ordenados por puesto.</p>
+      </div>
+      <nav id="site-nav" class="nav" aria-label="Secciones de la web"></nav>
+    </div>
   </header>
 
   <main>
@@ -27,6 +32,7 @@
     <button class="close" id="dlg-close" type="button" aria-label="Cerrar">&times;</button>
 
     <div class="dlg-video" id="dlg-video"></div>
+    <a class="yt-link" id="dlg-yt" href="#" target="_blank" rel="noopener">Ver el vídeo en YouTube</a>
 
     <div class="dlg-title">
       <span class="dlg-rank" id="dlg-rank"></span>
@@ -63,6 +69,7 @@
   </dialog>
 
   <script src="niveles.js"></script>
+  <script src="nav.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

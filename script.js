@@ -5,6 +5,7 @@ const emptyMsg = document.getElementById("list-empty");
 const dialog = document.getElementById("level-dialog");
 const els = {
   video: document.getElementById("dlg-video"),
+  yt: document.getElementById("dlg-yt"),
   rank: document.getElementById("dlg-rank"),
   name: document.getElementById("dlg-name"),
   points: document.getElementById("dlg-points"),
@@ -93,6 +94,8 @@ function abrirNivel(nivel, puesto) {
   els.video.replaceChildren();
   const vid = videoId(nivel.video);
   els.video.hidden = !vid;
+  els.yt.hidden = !vid;
+  if (vid) els.yt.href = `https://www.youtube.com/watch?v=${vid}`;
   if (vid) {
     const iframe = document.createElement("iframe");
     iframe.src = `https://www.youtube.com/embed/${vid}`;

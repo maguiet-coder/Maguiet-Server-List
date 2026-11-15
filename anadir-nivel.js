@@ -1,3 +1,23 @@
+function copiarTexto(texto, boton, etiquetaOk, etiquetaNormal) {
+  const ok = () => { boton.textContent = etiquetaOk; };
+  const respaldo = () => {
+    const t = document.createElement("textarea");
+    t.value = texto;
+    document.body.appendChild(t);
+    t.select();
+    try { document.execCommand("copy"); ok(); } catch (e) {}
+    t.remove();
+  };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(texto).then(ok, respaldo);
+  } else {
+    respaldo();
+  }
+  boton.dataset.normal = etiquetaNormal;
+}
+
+/* ---------- Formulario 1: añadir un nivel ---------- */
+
 const campos = {
   nombre: document.getElementById("f-nombre"),
   video: document.getElementById("f-video"),
@@ -10,7 +30,13 @@ const campos = {
 const salida = document.getElementById("salida");
 const boton = document.getElementById("copiar");
 
-function generar() {
+function lineaJugador(jugador, fecha) {
+  const partes = [`jugador: ${JSON.stringify(jugador)}`];
+  if (fecha) partes.push(`fecha: ${JSON.stringify(fecha)}`);
+  return `{ ${partes.join(", ")} },`;
+}
+
+function generarNivel() {
   const lineas = campos.jugadores.value
     .split("\n")
     .map((l) => l.trim())
@@ -19,9 +45,7 @@ function generar() {
       const i = l.indexOf(",");
       const jugador = (i === -1 ? l : l.slice(0, i)).trim();
       const fecha = i === -1 ? "" : l.slice(i + 1).trim();
-      const partes = [`jugador: ${JSON.stringify(jugador)}`];
-      if (fecha) partes.push(`fecha: ${JSON.stringify(fecha)}`);
-      return `      { ${partes.join(", ")} },`;
+      return "      " + lineaJugador(jugador, fecha);
     });
 
   const puntos = Number(campos.puntos.value) || 0;
@@ -40,27 +64,38 @@ function generar() {
   ].join("\n");
 }
 
-function actualizar() {
-  salida.textContent = generar();
+function actualizarNivel() {
+  salida.textContent = generarNivel();
   boton.textContent = "Copiar código";
 }
 
-function copiar(texto) {
-  const respaldo = () => {
-    const t = document.createElement("textarea");
-    t.value = texto;
-    document.body.appendChild(t);
-    t.select();
-    try { document.execCommand("copy"); boton.textContent = "Código copiado"; } catch (e) {}
-    t.remove();
-  };
-  if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(texto).then(() => { boton.textContent = "Código copiado"; }, respaldo);
-  } else {
-    respaldo();
-  }
+Object.values(campos).forEach((c) => c.addEventListener("input", actualizarNivel));
+boton.addEventListener("click", () =>
+  copiarTexto(salida.textContent, boton, "Código copiado", "Copiar código"));
+actualizarNivel();
+
+/* ---------- Formulario 2: añadir un récord ---------- */
+
+const rNivel = document.getElementById("r-nivel");
+const rJugador = document.getElementById("r-jugador");
+const rFecha = document.getElementById("r-fecha");
+const rSalida = document.getElementById("r-salida");
+const rBoton = document.getElementById("r-copiar");
+
+NIVELES.forEach((n, i) => {
+  const op = document.createElement("option");
+  op.value = String(i);
+  op.textContent = `#${i + 1} ${n.nombre}`;
+  rNivel.appendChild(op);
+});
+
+function actualizarRecord() {
+  const jugador = rJugador.value.trim() || "Nombre del jugador";
+  rSalida.textContent = lineaJugador(jugador, rFecha.value.trim());
+  rBoton.textContent = "Copiar línea";
 }
 
-Object.values(campos).forEach((c) => c.addEventListener("input", actualizar));
-boton.addEventListener("click", () => copiar(salida.textContent));
-actualizar();
+[rNivel, rJugador, rFecha].forEach((c) => c.addEventListener("input", actualizarRecord));
+rBoton.addEventListener("click", () =>
+  copiarTexto(rSalida.textContent, rBoton, "Línea copiada", "Copiar línea"));
+actualizarRecord();

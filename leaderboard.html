@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaderboard · Maguiet Server List</title>
+  <meta name="description" content="Clasificación general de jugadores por puntos totales.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-row">
+      <div>
+        <h1>Leaderboard</h1>
+        <p class="tagline">Puntos totales de cada jugador, sumando los niveles que ha completado.</p>
+      </div>
+      <nav id="site-nav" class="nav" aria-label="Secciones de la web"></nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="visually-hidden">Clasificación de jugadores</h2>
+    <ol id="player-list" class="level-list"></ol>
+    <p id="list-empty" class="empty" hidden>Todavía no hay jugadores en la clasificación.</p>
+  </main>
+
+  <script src="niveles.js"></script>
+  <script src="nav.js"></script>
+  <script src="leaderboard.js"></script>
+</body>
+</html>

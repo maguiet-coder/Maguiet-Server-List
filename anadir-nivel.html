@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Añadir nivel · Maguiet Server List</title>
+  <title>Añadir niveles y récords · Maguiet Server List</title>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +13,14 @@
 </head>
 <body>
   <header class="site-header">
-    <h1>Añadir nivel</h1>
+    <h1>Panel de edición</h1>
     <p class="tagline"><a class="back" href="index.html">Volver a la lista</a></p>
   </header>
 
   <main>
+    <h2 class="tool-title">Añadir un nivel</h2>
     <ol class="steps">
-      <li><strong>Rellena</strong> los datos del nivel.</li>
-      <li>Pulsa <strong>Copiar código</strong>.</li>
+      <li><strong>Rellena</strong> los datos y pulsa <strong>Copiar código</strong>.</li>
       <li>Abre <strong>niveles.js</strong> y pega el código dentro de la lista, antes del <strong>];</strong> final. El orden decide el puesto: el de arriba es el #1.</li>
       <li>Guarda y sube los cambios con <strong>GitHub Desktop</strong> (Commit y Push origin).</li>
     </ol>
@@ -59,7 +59,7 @@
         </label>
       </div>
 
-      <label>Leaderboard (opcional)
+      <label>Quién se lo ha pasado (opcional)
         <textarea id="f-jugadores" rows="3" placeholder="Un jugador por línea. Puedes poner la fecha después de una coma:&#10;Maguiet, 15/11/2026"></textarea>
       </label>
 
@@ -67,8 +67,35 @@
 
       <button class="primary" id="copiar" type="button">Copiar código</button>
     </div>
+
+    <h2 class="tool-title">Añadir un récord a un nivel</h2>
+    <ol class="steps">
+      <li>Elige el nivel, escribe el jugador y pulsa <strong>Copiar línea</strong>.</li>
+      <li>En <strong>niveles.js</strong>, busca ese nivel y pega la línea dentro de su <strong>leaderboard: [ ... ]</strong>. El primero en pasárselo va arriba.</li>
+      <li>Guarda y sube los cambios. La Leaderboard general se actualiza sola.</li>
+    </ol>
+
+    <div class="tool">
+      <label>Nivel
+        <select id="r-nivel"></select>
+      </label>
+
+      <div class="row">
+        <label>Jugador
+          <input id="r-jugador" type="text" placeholder="Nombre del jugador" autocomplete="off">
+        </label>
+        <label>Fecha (opcional)
+          <input id="r-fecha" type="text" placeholder="15/11/2026" autocomplete="off">
+        </label>
+      </div>
+
+      <pre id="r-salida" aria-live="polite"></pre>
+
+      <button class="primary" id="r-copiar" type="button">Copiar línea</button>
+    </div>
   </main>
 
+  <script src="niveles.js"></script>
   <script src="anadir-nivel.js"></script>
 </body>
 </html>
