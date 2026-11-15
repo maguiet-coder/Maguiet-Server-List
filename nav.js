@@ -55,9 +55,15 @@ function copiar(texto, hecho) {
     panel.appendChild(a);
   });
 
-  const abrir = (o) => { panel.classList.toggle("open", o); btn.setAttribute("aria-expanded", String(o)); };
+  const ancho = () => window.matchMedia("(min-width: 900px)").matches;
+  const abrir = (o) => {
+    panel.classList.toggle("open", o);
+    document.body.classList.toggle("nav-open", o);
+    btn.setAttribute("aria-expanded", String(o));
+  };
   btn.addEventListener("click", (e) => { e.stopPropagation(); abrir(!panel.classList.contains("open")); });
-  document.addEventListener("click", (e) => { if (!panel.contains(e.target)) abrir(false); });
+  // En pantallas anchas el menú se queda abierto mientras navegas; en móvil se cierra al tocar fuera
+  document.addEventListener("click", (e) => { if (!ancho() && !panel.contains(e.target)) abrir(false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") abrir(false); });
   document.body.append(btn, panel);
 })();

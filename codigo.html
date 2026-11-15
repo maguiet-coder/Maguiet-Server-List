@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generador de código · Maguiet Server List</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Generador de código</h1>
+    <p class="tagline">Rellena, pulsa copiar y pega el resultado en <strong>niveles.js</strong>. Luego Commit y Push en GitHub Desktop.</p>
+  </header>
+
+  <main>
+    <h2 class="tool-title">Añadir un nivel</h2>
+    <p class="hint">Pega el código dentro de <strong>NIVELES</strong>, antes del <strong>];</strong> de esa lista. El orden decide el puesto.</p>
+    <div class="tool">
+      <label>Nombre del nivel <input id="f-nombre" type="text" placeholder="Ultimate MortalTerra" autocomplete="off"></label>
+      <label>Enlace del vídeo <input id="f-video" type="text" placeholder="https://youtu.be/..." autocomplete="off"></label>
+      <div class="row">
+        <label>ID del nivel <input id="f-id" type="text" inputmode="numeric" placeholder="140986997" autocomplete="off"></label>
+        <label>Creador <input id="f-creador" type="text" placeholder="Maguiet" autocomplete="off"></label>
+      </div>
+      <div class="row">
+        <label>Puntos <input id="f-puntos" type="number" min="0" placeholder="200"></label>
+        <label>Dificultad
+          <select id="f-dificultad">
+            <option>Easy Demon</option><option>Medium Demon</option><option selected>Hard Demon</option>
+            <option>Insane Demon</option><option>Extreme Demon</option>
+          </select>
+        </label>
+      </div>
+      <label>Quién se lo ha pasado (opcional)
+        <textarea id="f-jugadores" rows="3" placeholder="Un jugador por línea. Fecha opcional tras una coma:&#10;Maguiet, 15/11/2026"></textarea>
+      </label>
+      <pre id="f-salida"></pre>
+      <button class="primary" id="f-copiar" type="button">Copiar código</button>
+    </div>
+
+    <h2 class="tool-title">Añadir un récord a un nivel</h2>
+    <p class="hint">Pega la línea dentro del <strong>leaderboard: [ ... ]</strong> del nivel elegido. El primero en pasárselo va arriba.</p>
+    <div class="tool">
+      <label>Nivel <select id="r-nivel"></select></label>
+      <div class="row">
+        <label>Jugador <input id="r-jugador" type="text" placeholder="Nombre del jugador" autocomplete="off"></label>
+        <label>Fecha (opcional) <input id="r-fecha" type="text" placeholder="15/11/2026" autocomplete="off"></label>
+      </div>
+      <pre id="r-salida"></pre>
+      <button class="primary" id="r-copiar" type="button">Copiar línea</button>
+    </div>
+
+    <h2 class="tool-title">Añadir un pack</h2>
+    <p class="hint">Pega el código dentro de <strong>PACKS</strong>, antes del <strong>];</strong> de esa lista.</p>
+    <div class="tool">
+      <div class="row">
+        <label>Nombre del pack <input id="p-nombre" type="text" placeholder="Pack Maguiet" autocomplete="off"></label>
+        <label>Puntos extra <input id="p-puntos" type="number" min="0" placeholder="50"></label>
+      </div>
+      <div id="p-niveles"></div>
+      <pre id="p-salida"></pre>
+      <button class="primary" id="p-copiar" type="button">Copiar código</button>
+    </div>
+  </main>
+
+  <script src="niveles.js"></script>
+  <script src="nav.js"></script>
+  <script src="codigo.js"></script>
+</body>
+</html>
