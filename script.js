@@ -68,6 +68,21 @@ function abrir(nivel, puesto) {
   els.video.hidden = els.yt.hidden = !vid;
   if (vid) {
     els.yt.href = `https://www.youtube.com/watch?v=${vid}`;
+    if (location.protocol === "file:") {
+      // Abierta como archivo del ordenador, YouTube bloquea el reproductor (error 153): se ofrece el enlace
+      const local = document.createElement("a");
+      local.className = "video-local";
+      local.href = els.yt.href;
+      local.target = "_blank";
+      local.rel = "noopener";
+      local.style.backgroundImage = `url(https://img.youtube.com/vi/${vid}/hqdefault.jpg)`;
+      const boton = document.createElement("span");
+      boton.textContent = "▶ Ver el vídeo en YouTube";
+      const nota = document.createElement("small");
+      nota.textContent = "En la web publicada se reproduce aquí mismo.";
+      local.append(boton, nota);
+      els.video.appendChild(local);
+    } else {
     const iframe = document.createElement("iframe");
     iframe.src = `https://www.youtube.com/embed/${vid}?rel=0`;
     iframe.title = `Vídeo de ${nivel.nombre}`;
@@ -75,6 +90,7 @@ function abrir(nivel, puesto) {
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
     iframe.allowFullscreen = true;
     els.video.appendChild(iframe);
+    }
   }
 
   els.rank.textContent = `#${puesto}`;

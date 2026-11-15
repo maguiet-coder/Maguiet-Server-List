@@ -710,3 +710,35 @@ html { scrollbar-color: #4a4a52 var(--bg-bottom); }
 }
 
 .hint a { color: var(--orange); }
+
+/* ---------- Vídeo al abrir la web como archivo local ---------- */
+
+.video-local {
+  position: relative;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.video-local::before { content: ""; position: absolute; inset: 0; background: rgba(18, 18, 20, 0.6); }
+
+.video-local span, .video-local small { position: relative; }
+
+.video-local span {
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #1a1a1d;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.video-local:hover span { background: #ffa04d; }
+.video-local small { color: var(--text); text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8); }
