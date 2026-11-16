@@ -29,15 +29,6 @@ const NIVELES = [
         "jugador": "Maguiet"
       }
     ]
-  },
-  {
-    "nombre": "XDDDDDDDDD",
-    "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
-    "id": "15367474",
-    "creador": "ooOP",
-    "puntos": 12,
-    "dificultad": "Easy Demon",
-    "leaderboard": []
   }
 ];
 
