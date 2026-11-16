@@ -40,6 +40,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "iPol"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -53,6 +56,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "conastinopla"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
