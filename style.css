@@ -846,3 +846,90 @@ html { scrollbar-color: #4a4a52 var(--bg-bottom); }
   .level-dialog { padding: 0.9rem; border-radius: 24px; }
   .dlg-rank { font-size: 2.2rem; }
 }
+
+/* ---------- Pulido visual (sin cambiar el diseño) ---------- */
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+h1, h2, h3, .tagline { text-wrap: balance; }
+p { text-wrap: pretty; }
+.points, .stat dd, .rank, .dlg-rank, .date { font-variant-numeric: tabular-nums; }
+
+/* Profundidad: un brillo fino en el borde superior de las tarjetas */
+.level-card, .pack, .normas, .hub-btn { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 8px 24px rgba(0, 0, 0, 0.35); }
+.level-card:hover { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 12px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 138, 43, 0.25); }
+.stat, .tool, .row-list li { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04); }
+.badge { box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15); letter-spacing: 0.01em; }
+.empty { text-align: center; padding: 1.4rem 1.1rem; }
+
+/* Miniaturas con un ligero degradado inferior */
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), inset 0 -40px 40px -30px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+@keyframes latido {
+  0%, 100% { box-shadow: inset 0 0 0 2px var(--orange), 0 0 0 0 rgba(255, 138, 43, 0.35); }
+  50%      { box-shadow: inset 0 0 0 2px var(--orange), 0 0 0 9px rgba(255, 138, 43, 0); }
+}
+@keyframes flota { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@keyframes barra { from { width: 0; } }
+
+.play { animation: latido 2.8s ease-in-out infinite; }
+.crown { animation: flota 3s ease-in-out infinite; }
+.site-header::after { animation: barra 0.6s 0.1s ease both; }
+
+/* Brillo del Top 1 aplicado a todos los puestos, como decoración */
+.level-card { border-color: rgba(255, 138, 43, 0.5); }
+.level-card .rank, .dlg-rank { text-shadow: 0 0 20px rgba(255, 138, 43, 0.5); }
+
+/* Hub: flecha que aparece al pasar el ratón */
+.hub-btn strong::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 0.5rem;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.15s, transform 0.15s;
+}
+.hub-btn:hover strong::after { opacity: 1; transform: none; }
+
+/* Menú lateral: marca de la sección actual y movimiento suave */
+.nav-panel a { position: relative; transition: background 0.15s, color 0.15s, padding-left 0.15s; }
+.nav-panel a:hover { padding-left: 1.25rem; }
+.nav-panel a[aria-current="page"]::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 22%; bottom: 22%;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--orange);
+}
+
+/* Respuesta al pulsar y al enfocar */
+.copy:active, .primary:active, .nav-btn:active, .hub-btn:active, .hub-main:active { transform: scale(0.98); }
+.level-card:active { transform: translateY(0) scale(0.995); }
+.search, .tool input, .tool select, .tool textarea { transition: border-color 0.15s, box-shadow 0.15s; }
+.search:focus, .tool input:focus, .tool select:focus, .tool textarea:focus { box-shadow: 0 0 0 4px rgba(255, 138, 43, 0.18); }
+.copy, .primary, .close { transition: background 0.15s, color 0.15s, transform 0.1s; }
+
+/* Menú de nivel y panel de jugador */
+.level-dialog::backdrop { backdrop-filter: blur(4px); }
+.level-dialog { scrollbar-color: #4a4a52 transparent; }
+.player-panel:not([hidden]) { animation: subir 0.25s ease both; }
+
+/* Barra de desplazamiento a juego */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #46464d; border-radius: 8px; border: 3px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-thumb:hover { background: #5a5a63; background-clip: content-box; }
+
+/* Pantallas táctiles: botones más fáciles de pulsar */
+@media (pointer: coarse) {
+  .copy { padding: 0.45rem 1rem; }
+  .close { width: 44px; height: 44px; }
+}

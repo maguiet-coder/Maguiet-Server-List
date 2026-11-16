@@ -99,7 +99,7 @@ jugadores.forEach((j, i) => {
   if (i > 0 && j.puntos < jugadores[i - 1].puntos) puesto = i + 1; // empates comparten puesto
 
   const li = el("li");
-  const fila = el("button", "level-card player-card");
+  const fila = el("button", "level-card player-card" + (puesto === 1 ? " top1" : ""));
   fila.type = "button";
   fila.setAttribute("aria-expanded", "false");
   fila.setAttribute("aria-controls", `jugador-${i}`);

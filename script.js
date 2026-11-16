@@ -22,6 +22,7 @@ function dibujar(filtro) {
     const card = document.createElement("button");
     card.type = "button";
     card.className = "level-card";
+    if (puesto === 1) card.classList.add("top1");
     card.setAttribute("aria-label", `Abrir el nivel ${nivel.nombre}, puesto ${puesto}`);
 
     const thumb = document.createElement("div");

@@ -31,7 +31,7 @@
       r: rnd(0.8, 2.2),
       vida: 0,
       dura: rnd(180, 380),
-      max: rnd(0.18, 0.4),
+      max: rnd(0.207, 0.46), // opacidad máxima (un 15% más que antes)
       fase: rnd(0, 6.28)
     });
   }
