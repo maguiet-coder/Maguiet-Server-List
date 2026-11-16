@@ -546,5 +546,14 @@ const PACKS = [
       "Ultimate MortalTerra",
       "Bioluminescence"
     ]
+  },
+  {
+    "nombre": "AFTERCATABATH",
+    "puntos": 500,
+    "niveles": [
+      "Bloodbath",
+      "Cataclysm",
+      "aftermath"
+    ]
   }
 ];
