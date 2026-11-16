@@ -31,11 +31,24 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Triad",
+    "video": "https://youtu.be/CvzHeB2O0JA?si=e_eo-g2ywh-ozpZX",
+    "id": "142024627",
+    "creador": "Koishite",
+    "puntos": 130,
+    "dificultad": "Hard Demon",
+    "leaderboard": [
+      {
+        "jugador": "Maguiet"
+      }
+    ]
+  },
+  {
     "nombre": "Bioluminescence",
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
     "creador": "Maguiet",
-    "puntos": 45,
+    "puntos": 50,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
