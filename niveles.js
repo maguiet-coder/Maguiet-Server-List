@@ -417,6 +417,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Through The Decay",
+    "video": "https://youtu.be/vH1sx4XLnHI",
+    "id": "114933189",
+    "creador": "sparktwo",
+    "puntos": 60,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Precipitance",
     "video": "https://youtu.be/MWUHH_j280Y?si=6MTrpSTES835pPlK",
     "id": "60197839",
