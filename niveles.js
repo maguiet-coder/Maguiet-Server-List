@@ -9,7 +9,7 @@ const NIVELES = [
     "video": "https://youtu.be/McaXulAUAek?si=rBhEjyAtMtKw2ZDu",
     "id": "51791710",
     "creador": "LazerBlitz",
-    "puntos": 1200,
+    "puntos": 16063,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -22,7 +22,7 @@ const NIVELES = [
     "video": "https://youtu.be/wmLmklrnO8I",
     "id": "140986997",
     "creador": "Maguiet",
-    "puntos": 190,
+    "puntos": 760,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -35,7 +35,7 @@ const NIVELES = [
     "video": "https://youtu.be/yrL1Zpo2Qso?si=CgeJy-PnmTIfyt8B",
     "id": "4284013",
     "creador": "Zobros",
-    "puntos": 180,
+    "puntos": 720,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -51,7 +51,7 @@ const NIVELES = [
     "video": "https://youtu.be/CvzHeB2O0JA?si=e_eo-g2ywh-ozpZX",
     "id": "142024627",
     "creador": "Koishite",
-    "puntos": 130,
+    "puntos": 700,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -64,7 +64,7 @@ const NIVELES = [
     "video": "https://youtu.be/PYm7xbnQCvw?si=gGRAUhL_kY2fUUnI",
     "id": "135005345",
     "creador": "Inedite",
-    "puntos": 90,
+    "puntos": 400,
     "dificultad": "Medium Demon",
     "leaderboard": [
       {
@@ -77,7 +77,7 @@ const NIVELES = [
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
     "creador": "Maguiet",
-    "puntos": 50,
+    "puntos": 110,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
