@@ -392,7 +392,7 @@ const NIVELES = [
     "video": "https://youtu.be/C2p8gdP3yus?si=OAdP4plpEIia4Agt",
     "id": "81148582",
     "creador": "VelYT",
-    "puntos": 100,
+    "puntos": 1100,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -405,7 +405,7 @@ const NIVELES = [
     "video": "https://youtu.be/m4mAJjgrx1g?si=75WAQfgU6-PV9ym9",
     "id": "61079355",
     "creador": "neigefeu",
-    "puntos": 80,
+    "puntos": 1080,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -418,7 +418,7 @@ const NIVELES = [
     "video": "https://youtu.be/MWUHH_j280Y?si=6MTrpSTES835pPlK",
     "id": "60197839",
     "creador": "Extravagon",
-    "puntos": 50,
+    "puntos": 1050,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -431,7 +431,7 @@ const NIVELES = [
     "video": "https://youtu.be/Yls2tPTswsU?si=KoSLslCEBEEbIQmV",
     "id": "146399247",
     "creador": "Devilmine",
-    "puntos": 30,
+    "puntos": 1030,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
