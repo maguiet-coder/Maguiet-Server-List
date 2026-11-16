@@ -9,7 +9,7 @@ const NIVELES = [
     "video": "https://youtu.be/McaXulAUAek?si=rBhEjyAtMtKw2ZDu",
     "id": "51791710",
     "creador": "LazerBlitz",
-    "puntos": 16063,
+    "puntos": 10835,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -18,11 +18,24 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Broken Signal",
+    "video": "https://youtu.be/-vTOc7mUeGA?si=t67c0VrEzwfdlZgg",
+    "id": "69198628",
+    "creador": "Grax",
+    "puntos": 4595,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "conastinopla"
+      }
+    ]
+  },
+  {
     "nombre": "Ultimate MortalTerra",
     "video": "https://youtu.be/wmLmklrnO8I",
     "id": "140986997",
     "creador": "Maguiet",
-    "puntos": 760,
+    "puntos": 550,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -35,7 +48,7 @@ const NIVELES = [
     "video": "https://youtu.be/yrL1Zpo2Qso?si=CgeJy-PnmTIfyt8B",
     "id": "4284013",
     "creador": "Zobros",
-    "puntos": 720,
+    "puntos": 530,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -51,7 +64,7 @@ const NIVELES = [
     "video": "https://youtu.be/CvzHeB2O0JA?si=e_eo-g2ywh-ozpZX",
     "id": "142024627",
     "creador": "Koishite",
-    "puntos": 700,
+    "puntos": 500,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -64,7 +77,7 @@ const NIVELES = [
     "video": "https://youtu.be/PYm7xbnQCvw?si=gGRAUhL_kY2fUUnI",
     "id": "135005345",
     "creador": "Inedite",
-    "puntos": 400,
+    "puntos": 350,
     "dificultad": "Medium Demon",
     "leaderboard": [
       {
@@ -77,7 +90,7 @@ const NIVELES = [
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
     "creador": "Maguiet",
-    "puntos": 110,
+    "puntos": 80,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
