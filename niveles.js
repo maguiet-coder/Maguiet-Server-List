@@ -40,6 +40,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   }
