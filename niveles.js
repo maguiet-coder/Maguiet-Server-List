@@ -32,7 +32,7 @@ const NIVELES = [
   },
   {
     "nombre": "Nine Circles",
-    "video": "https://youtu.be/noczSLuiaUw?si=DVf4lQUMZtJ6C698",
+    "video": "https://youtu.be/yrL1Zpo2Qso?si=CgeJy-PnmTIfyt8B",
     "id": "4284013",
     "creador": "Zobros",
     "puntos": 180,
