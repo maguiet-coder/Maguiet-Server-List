@@ -5,11 +5,24 @@
 
 const NIVELES = [
   {
+    "nombre": "Auditory Breaker",
+    "video": "https://youtu.be/McaXulAUAek?si=rBhEjyAtMtKw2ZDu",
+    "id": "51791710",
+    "creador": "LazerBlitz",
+    "puntos": 1200,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Ultimate MortalTerra",
     "video": "https://youtu.be/wmLmklrnO8I",
     "id": "140986997",
     "creador": "Maguiet",
-    "puntos": 200,
+    "puntos": 190,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -22,7 +35,7 @@ const NIVELES = [
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
     "creador": "Maguiet",
-    "puntos": 35,
+    "puntos": 45,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
