@@ -353,7 +353,7 @@ const NIVELES = [
     "video": "https://youtu.be/7Cnu1ZEmqLg?si=sFvx5vAtRSyKx_SN",
     "id": "62214792",
     "creador": "Sillow",
-    "puntos": 670,
+    "puntos": 1670,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -366,7 +366,7 @@ const NIVELES = [
     "video": "https://youtu.be/bYlPLRCpCmE?si=yZH20sY_B8COvEa_",
     "id": "132458573",
     "creador": "Fawxu",
-    "puntos": 560,
+    "puntos": 1560,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -379,7 +379,7 @@ const NIVELES = [
     "video": "https://youtu.be/8XuF9rjJ0Z8?si=MItR8qwobc4j-a66",
     "id": "87425029",
     "creador": "Teno",
-    "puntos": 430,
+    "puntos": 1430,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -410,6 +410,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "iPol"
       }
     ]
   },
