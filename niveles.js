@@ -56,6 +56,12 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "iPol"
+      },
+      {
+        "jugador": "Quarius"
       }
     ]
   }
