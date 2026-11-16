@@ -31,12 +31,38 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Nine Circles",
+    "video": "https://youtu.be/noczSLuiaUw?si=DVf4lQUMZtJ6C698",
+    "id": "4284013",
+    "creador": "Zobros",
+    "puntos": 180,
+    "dificultad": "Hard Demon",
+    "leaderboard": [
+      {
+        "jugador": "AXEL708"
+      }
+    ]
+  },
+  {
     "nombre": "Triad",
     "video": "https://youtu.be/CvzHeB2O0JA?si=e_eo-g2ywh-ozpZX",
     "id": "142024627",
     "creador": "Koishite",
     "puntos": 130,
     "dificultad": "Hard Demon",
+    "leaderboard": [
+      {
+        "jugador": "Maguiet"
+      }
+    ]
+  },
+  {
+    "nombre": "Akineract",
+    "video": "https://youtu.be/PYm7xbnQCvw?si=gGRAUhL_kY2fUUnI",
+    "id": "135005345",
+    "creador": "Inedite",
+    "puntos": 90,
+    "dificultad": "Medium Demon",
     "leaderboard": [
       {
         "jugador": "Maguiet"
