@@ -18,6 +18,32 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Sakupen Hell",
+    "video": "https://youtu.be/8kNzhz97mdA",
+    "id": "23262780",
+    "creador": "Trusta",
+    "puntos": 9330,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "iPol"
+      }
+    ]
+  },
+  {
+    "nombre": "Bloodbath",
+    "video": "https://youtu.be/5UUFOB2CZfc",
+    "id": "10565740",
+    "creador": "Riot",
+    "puntos": 8600,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "iPol"
+      }
+    ]
+  },
+  {
     "nombre": "Broken Signal",
     "video": "https://youtu.be/-vTOc7mUeGA?si=t67c0VrEzwfdlZgg",
     "id": "69198628",
