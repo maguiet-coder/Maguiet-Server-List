@@ -457,12 +457,13 @@ main {
   padding: 0 12px;
   border: 1.5px solid var(--orange);
   border-radius: 14px;
-  background: rgba(26, 26, 29, 0.92);
+  background: var(--card);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 .nav-btn span { display: block; height: 3px; border-radius: 3px; background: var(--orange); }
-.nav-btn:hover { background: var(--orange-soft); }
+.nav-btn:hover { background: var(--card-hover); }
 
 .nav-panel {
   position: fixed;
@@ -794,4 +795,54 @@ html { scrollbar-color: #4a4a52 var(--bg-bottom); }
   background: rgba(0, 0, 0, 0.22);
   border: 1px solid var(--line);
   border-radius: 12px;
+}
+
+/* ---------- Corona, dificultad bajo el vídeo, partículas ---------- */
+
+.crown {
+  display: inline-block;
+  margin-right: 0.35rem;
+  font-size: 0.6em;
+  vertical-align: 0.12em;
+  filter: drop-shadow(0 0 6px rgba(255, 170, 60, 0.6));
+}
+
+.dlg-under {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.dlg-under .badge { padding: 0.15rem 0.95rem; font-size: 1.05rem; }
+.dlg-under .yt-link { margin-top: 0; }
+
+.particulas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.site-header, main { position: relative; z-index: 1; }
+
+/* ---------- Móvil: tarjetas apiladas, no achatadas ---------- */
+
+@media (max-width: 560px) {
+  .level-card:not(.player-card) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+    padding: 0.6rem 0.6rem 3.1rem;
+  }
+  .level-card:not(.player-card) .thumb { width: 100%; }
+  .level-card:not(.player-card) .card-info { padding: 0 0.5rem; }
+  .play { width: 54px; height: 54px; }
+  .hub-main { min-height: 170px; padding: 1.5rem; }
+  .level-dialog { padding: 0.9rem; border-radius: 24px; }
+  .dlg-rank { font-size: 2.2rem; }
 }

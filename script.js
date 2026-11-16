@@ -42,6 +42,13 @@ function dibujar(filtro) {
     const rank = document.createElement("span");
     rank.className = "rank";
     rank.textContent = `#${puesto}`;
+    if (puesto === 1) {
+      const corona = document.createElement("span");
+      corona.className = "crown";
+      corona.textContent = "👑";
+      corona.setAttribute("aria-hidden", "true");
+      rank.prepend(corona);
+    }
     const name = document.createElement("span");
     name.className = "level-name";
     name.textContent = nivel.nombre;

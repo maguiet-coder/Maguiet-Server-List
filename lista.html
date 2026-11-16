@@ -25,14 +25,16 @@
   <dialog id="level-dialog" class="level-dialog" aria-labelledby="dlg-name">
     <button class="close" id="dlg-close" type="button" aria-label="Cerrar">&times;</button>
     <div class="dlg-video" id="dlg-video"></div>
-    <a class="yt-link" id="dlg-yt" href="#" target="_blank" rel="noopener">Ver el vídeo en YouTube</a>
+    <div class="dlg-under">
+      <span class="badge" id="dlg-difficulty"></span>
+      <a class="yt-link" id="dlg-yt" href="#" target="_blank" rel="noopener">Ver el vídeo en YouTube</a>
+    </div>
     <div class="dlg-title">
       <span class="dlg-rank" id="dlg-rank"></span>
       <h2 id="dlg-name"></h2>
     </div>
     <dl class="stats">
       <div class="stat"><dt>Puntos</dt><dd id="dlg-points"></dd></div>
-      <div class="stat"><dt>Dificultad</dt><dd><span class="badge" id="dlg-difficulty"></span></dd></div>
       <div class="stat"><dt>Creador</dt><dd id="dlg-creator"></dd></div>
       <div class="stat"><dt>ID del nivel</dt><dd><span id="dlg-id"></span><button class="copy" id="dlg-copy" type="button">Copiar ID</button></dd></div>
     </dl>
@@ -46,5 +48,6 @@
   <script src="niveles.js"></script>
   <script src="nav.js"></script>
   <script src="script.js"></script>
+  <script src="particulas.js"></script>
 </body>
 </html>
