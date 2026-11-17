@@ -17,7 +17,10 @@
   </header>
 
   <main>
-    <input id="buscar" class="search" type="search" placeholder="Buscar por nombre, creador o ID" aria-label="Buscar nivel">
+    <div class="herramientas">
+      <input id="buscar" class="search" type="search" placeholder="Buscar por nombre, creador, ID o puesto (ej. #3 o 1-10)" aria-label="Buscar nivel">
+      <button class="copy" id="ir-final" type="button">↓ Ir al final</button>
+    </div>
     <ol id="level-list" class="level-list"></ol>
     <p id="list-empty" class="empty" hidden></p>
   </main>
@@ -36,7 +39,7 @@
     <dl class="stats">
       <div class="stat"><dt>Puntos</dt><dd id="dlg-points"></dd></div>
       <div class="stat"><dt>Creador</dt><dd id="dlg-creator"></dd></div>
-      <div class="stat"><dt>ID del nivel</dt><dd><span id="dlg-id"></span><button class="copy" id="dlg-copy" type="button">Copiar ID</button></dd></div>
+      <div class="stat"><dt>ID del nivel</dt><dd><span id="dlg-id"></span><button class="copy" id="dlg-copy" type="button">Copiar ID</button><a class="copy" id="dlg-gd" href="https://gdbrowser.com/" target="_blank" rel="noopener">Ver en GDBrowser</a></dd></div>
     </dl>
     <section class="leaderboard" aria-labelledby="lb-title">
       <h3 id="lb-title">Leaderboard del nivel</h3>

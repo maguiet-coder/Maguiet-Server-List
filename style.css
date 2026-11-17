@@ -1137,3 +1137,32 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .seccion-cab .tool-title { margin: 0; }
 #panel > .seccion-cab:first-child { margin-top: 0; }
 .nav-panel { overflow-y: auto; }
+
+/* ---------- Herramientas de la lista y botón de volver arriba ---------- */
+
+.herramientas { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-bottom: 1.1rem; }
+.herramientas .search { flex: 1 1 260px; width: auto; margin: 0; }
+.herramientas .copy { padding: 0.6rem 1.2rem; font-size: 0.95rem; }
+
+.subir {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 30;
+  width: 46px;
+  height: 46px;
+  border: 1.5px solid var(--orange);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--orange);
+  font-size: 1.3rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s, background 0.15s;
+}
+
+.subir.visible { opacity: 1; pointer-events: auto; transform: none; }
+.subir:hover { background: var(--card-hover); }

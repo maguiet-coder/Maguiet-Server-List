@@ -3,7 +3,7 @@ const $ = (id) => document.getElementById(id);
 const lista = $("level-list"), vacio = $("list-empty"), dialog = $("level-dialog"), buscar = $("buscar");
 const els = {
   video: $("dlg-video"), yt: $("dlg-yt"), rank: $("dlg-rank"), name: $("dlg-name"), points: $("dlg-points"),
-  difficulty: $("dlg-difficulty"), creator: $("dlg-creator"), id: $("dlg-id"), copy: $("dlg-copy"),
+  difficulty: $("dlg-difficulty"), creator: $("dlg-creator"), id: $("dlg-id"), copy: $("dlg-copy"), gd: $("dlg-gd"),
   board: $("dlg-leaderboard"), empty: $("dlg-empty"), close: $("dlg-close")
 };
 
@@ -14,7 +14,7 @@ function dibujar(filtro) {
 
   NIVELES.forEach((nivel, i) => {
     const puesto = i + 1; // el puesto lo decide el orden de la lista
-    if (q && ![nivel.nombre, nivel.creador, nivel.id].join(" ").toLowerCase().includes(q)) return;
+    if (q && !coincide(q, puesto, [nivel.nombre, nivel.creador], [nivel.id])) return;
     mostrados++;
     const vid = videoId(nivel.video);
 
@@ -108,6 +108,8 @@ function abrir(nivel, puesto) {
   els.difficulty.dataset.level = slug(nivel.dificultad);
   els.creator.textContent = nivel.creador; // como creador no lleva corona
   els.id.textContent = nivel.id;
+  els.gd.hidden = !nivel.id;
+  els.gd.href = `https://gdbrowser.com/${encodeURIComponent(String(nivel.id).trim())}`;
   els.copy.textContent = "Copiar ID";
   els.copy.onclick = () => copiar(String(nivel.id), () => { els.copy.textContent = "ID copiado"; });
 
@@ -137,4 +139,5 @@ dialog.addEventListener("click", (e) => {
   if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close();
 });
 buscar.addEventListener("input", () => dibujar(buscar.value));
+$("ir-final").addEventListener("click", irAlFinal);
 dibujar("");

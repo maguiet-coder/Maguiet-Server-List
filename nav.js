@@ -10,6 +10,38 @@ function videoId(v) {
 const slug = (t) => String(t).toLowerCase().trim().replace(/\s+/g, "-");
 const conCorona = (n) => (n.trim().toLowerCase() === "maguiet" ? n + " 👑🐸" : n);
 
+// Búsqueda con puesto: "3", "#3" o un rango "1-10". Si no es un número, busca en los textos.
+// "textos" son los campos de texto normales; "extra" (opcional) solo cuenta si no se busca un puesto corto.
+function coincide(q, puesto, textos, extra) {
+  const incluye = (arr) => arr.join(" ").toLowerCase().includes(q);
+  const rango = q.match(/^#?(\d{1,4})\s*[-–]\s*#?(\d{1,4})$/);
+  if (rango) {
+    const a = +rango[1], b = +rango[2];
+    return puesto >= Math.min(a, b) && puesto <= Math.max(a, b);
+  }
+  const uno = q.match(/^#?(\d{1,4})$/);
+  if (uno) {
+    if (puesto === +uno[1]) return true;
+    return q.startsWith("#") ? false : incluye(textos);
+  }
+  return incluye(textos.concat(extra || []));
+}
+
+const irAlFinal = () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+
+(function botonSubir() {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.className = "subir";
+  b.setAttribute("aria-label", "Volver arriba");
+  b.textContent = "↑";
+  b.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  const mostrar = () => b.classList.toggle("visible", window.scrollY > 500);
+  window.addEventListener("scroll", mostrar, { passive: true });
+  document.body.appendChild(b);
+  mostrar();
+})();
+
 function crearBadge(d) {
   const b = document.createElement("span");
   b.className = "badge";

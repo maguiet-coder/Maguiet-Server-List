@@ -92,7 +92,9 @@ function panelDe(j, id) {
 
 const jugadores = calcular();
 const lista = document.getElementById("player-list");
-document.getElementById("list-empty").hidden = jugadores.length > 0;
+const vacio = document.getElementById("list-empty");
+vacio.hidden = jugadores.length > 0;
+const filas = [];
 
 let puesto = 1;
 jugadores.forEach((j, i) => {
@@ -121,4 +123,20 @@ jugadores.forEach((j, i) => {
 
   li.append(fila, panel);
   lista.appendChild(li);
+  filas.push({ li, puesto, nombre: j.nombre });
 });
+
+// Búsqueda por nombre o por puesto ("3", "#3", "1-10")
+function filtrar() {
+  const q = document.getElementById("buscar").value.trim().toLowerCase();
+  let visibles = 0;
+  filas.forEach((f) => {
+    const ok = !q || coincide(q, f.puesto, [f.nombre]);
+    f.li.hidden = !ok;
+    if (ok) visibles++;
+  });
+  vacio.textContent = jugadores.length ? "Ningún jugador coincide con la búsqueda." : "Todavía no hay jugadores en la clasificación.";
+  vacio.hidden = visibles > 0;
+}
+document.getElementById("buscar").addEventListener("input", filtrar);
+document.getElementById("ir-final").addEventListener("click", irAlFinal);
