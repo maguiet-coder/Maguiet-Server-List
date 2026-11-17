@@ -7,6 +7,11 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-17",
   "tipo": "record",
+  "texto": "YtNeux se ha pasado Bioluminescence."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
   "texto": "YtNeux se ha pasado Skeletal Shenanigans ."
  },
  {
