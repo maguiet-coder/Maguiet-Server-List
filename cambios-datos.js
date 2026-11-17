@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "Aiman89 se ha pasado Electrodinamix v2."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Electrodinamix v2 (#41, 250 pts, Medium Demon)."
  },
