@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "Aiman89 se ha pasado B."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "puntos",
   "texto": "Electrodinamix v2: 250 → 300 pts."
  },
