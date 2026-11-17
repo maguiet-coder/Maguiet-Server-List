@@ -1130,3 +1130,10 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
   .saltos-caja { text-align: left; }
   .grande { width: 100%; text-align: center; }
 }
+
+/* ---------- Editor: botones de salto y menú en pantallas bajas ---------- */
+
+.seccion-cab { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem 1rem; margin: 2rem 0 0.8rem; }
+.seccion-cab .tool-title { margin: 0; }
+#panel > .seccion-cab:first-child { margin-top: 0; }
+.nav-panel { overflow-y: auto; }

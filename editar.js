@@ -296,6 +296,7 @@ $("add-pack").addEventListener("click", () => {
   packs.push(nuevo);
   abiertos.add(nuevo);
   pintarPacks();
+  $("ed-packs").lastElementChild.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 $("anuncio-add").addEventListener("click", () => {
   const texto = $("anuncio-texto").value.trim();
@@ -350,6 +351,16 @@ $("publicar").addEventListener("click", async () => {
   }
   fijarBase();
   aviso("¡Publicado! En 1 o 2 minutos se verá en la web." + (nuevas.length ? ` Se han anotado ${nuevas.length} cambios.` : ""));
+});
+
+// Botones de cada apartado para saltar a otro punto de la página
+document.querySelectorAll("[data-bajar]").forEach((b) => {
+  b.addEventListener("click", () => {
+    const destino = $(b.dataset.bajar);
+    if (!destino) return;
+    destino.scrollIntoView({ behavior: "smooth", block: destino.tagName === "BUTTON" ? "center" : "start" });
+    destino.focus({ preventScroll: true });
+  });
 });
 
 try { const guardado = localStorage.getItem("msl-token"); if (guardado) entrar(guardado, true); } catch (e) {}

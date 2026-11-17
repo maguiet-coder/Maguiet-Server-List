@@ -28,15 +28,24 @@
     </div>
 
     <div id="panel" hidden>
-      <h2 class="tool-title">Niveles y leaderboards</h2>
+      <div class="seccion-cab" id="ed-inicio">
+        <h2 class="tool-title">Niveles y leaderboards</h2>
+        <button class="copy" type="button" data-bajar="add-nivel">↓ Ir a añadir nivel</button>
+      </div>
       <div id="ed-niveles" class="ed-list"></div>
       <button class="primary" id="add-nivel" type="button">+ Añadir nivel</button>
 
-      <h2 class="tool-title">Packs</h2>
+      <div class="seccion-cab">
+        <h2 class="tool-title">Packs</h2>
+        <button class="copy" type="button" data-bajar="add-pack">↓ Ir a añadir pack</button>
+      </div>
       <div id="ed-packs" class="ed-list"></div>
       <button class="primary" id="add-pack" type="button">+ Añadir pack</button>
 
-      <h2 class="tool-title">Cambios y anuncios</h2>
+      <div class="seccion-cab">
+        <h2 class="tool-title">Cambios y anuncios</h2>
+        <button class="copy" type="button" data-bajar="publicar">↓ Ir a publicar</button>
+      </div>
       <div class="tool">
         <label class="chk"><input type="checkbox" id="anotar" checked> Anotar automáticamente los cambios al publicar (niveles nuevos, puntos, puestos, packs...)</label>
         <label>Anuncio manual
@@ -46,7 +55,10 @@
         <ul id="ed-historial" class="row-list historial"></ul>
       </div>
 
-      <h2 class="tool-title">Publicar</h2>
+      <div class="seccion-cab">
+        <h2 class="tool-title">Publicar</h2>
+        <button class="copy" type="button" data-bajar="ed-inicio">↑ Ir arriba</button>
+      </div>
       <div class="tool">
         <div class="acciones">
           <button class="primary" id="publicar" type="button">Publicar en la web</button>
