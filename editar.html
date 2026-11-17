@@ -23,16 +23,6 @@
         <input id="token" type="password" autocomplete="off" placeholder="github_pat_...">
         <span class="hint">Sin un token con permiso de escritura sobre el proyecto, esta página no deja ver ni cambiar nada. Se guarda solo en este navegador.</span>
       </label>
-      <details>
-        <summary>¿Cómo consigo el token?</summary>
-        <ol class="steps">
-          <li>En github.com pulsa tu foto de perfil, <strong>Settings</strong> y, abajo del todo, <strong>Developer settings</strong>.</li>
-          <li><strong>Personal access tokens → Fine-grained tokens → Generate new token</strong>.</li>
-          <li>En <strong>Repository access</strong> elige <strong>Only select repositories</strong> y marca <strong>Maguiet-Server-List</strong>.</li>
-          <li>En <strong>Permissions → Repository permissions</strong> pon <strong>Contents: Read and write</strong>.</li>
-          <li>Pulsa <strong>Generate token</strong>, copia el código y pégalo aquí.</li>
-        </ol>
-      </details>
       <button class="primary" id="entrar" type="button">Entrar</button>
       <p class="hint">¿Prefieres no usar el token? Usa el <a href="codigo.html">generador de código</a> y pega el resultado en niveles.js.</p>
     </div>
@@ -45,6 +35,16 @@
       <h2 class="tool-title">Packs</h2>
       <div id="ed-packs" class="ed-list"></div>
       <button class="primary" id="add-pack" type="button">+ Añadir pack</button>
+
+      <h2 class="tool-title">Cambios y anuncios</h2>
+      <div class="tool">
+        <label class="chk"><input type="checkbox" id="anotar" checked> Anotar automáticamente los cambios al publicar (niveles nuevos, puntos, puestos, packs...)</label>
+        <label>Anuncio manual
+          <input id="anuncio-texto" type="text" maxlength="200" placeholder="Ej: Esta semana revisamos los puntos de los Easy Demon" autocomplete="off">
+        </label>
+        <button class="copy" id="anuncio-add" type="button">Añadir anuncio</button>
+        <ul id="ed-historial" class="row-list historial"></ul>
+      </div>
 
       <h2 class="tool-title">Publicar</h2>
       <div class="tool">

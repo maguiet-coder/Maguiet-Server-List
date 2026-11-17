@@ -55,7 +55,7 @@ function panelDe(j, id) {
   s1.appendChild(caja);
 
   // Completions
-  const s2 = el("section");
+  const s2 = el("section", "completions");
   s2.appendChild(el("h3", "panel-title", `Completions (${j.completions.length})`));
   const ul = el("ul", "row-list");
   j.completions.forEach((c) => {
@@ -86,7 +86,7 @@ function panelDe(j, id) {
     s3.appendChild(lp);
   }
 
-  panel.append(s1, s2, s3);
+  panel.append(s1, s3, s2);
   return panel;
 }
 
