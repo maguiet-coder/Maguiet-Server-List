@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "pack",
+  "texto": "Pack renombrado: AFTERCATABATH Pack → Apocaliptic Trilogy Pack."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Take my hand (#42, 100 pts, Medium Demon)."
  },
