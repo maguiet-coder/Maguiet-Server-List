@@ -524,6 +524,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Electrodinamix v2",
+    "video": "https://youtu.be/PE6DD-98BKA",
+    "id": "839175",
+    "creador": "IIInePtuneIII",
+    "puntos": 300,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Bioluminescence",
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
@@ -545,19 +558,6 @@ const NIVELES = [
       },
       {
         "jugador": "NeuxGMD"
-      }
-    ]
-  },
-  {
-    "nombre": "Electrodinamix v2",
-    "video": "",
-    "id": "839175",
-    "creador": "IIInePtuneIII",
-    "puntos": 250,
-    "dificultad": "Medium Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   }
