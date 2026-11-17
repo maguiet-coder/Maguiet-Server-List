@@ -726,7 +726,7 @@ const PACKS = [
     ]
   },
   {
-    "nombre": "AFTERCATABATH Pack",
+    "nombre": "Apocaliptic Trilogy Pack",
     "puntos": 500,
     "niveles": [
       "Cataclysm",
