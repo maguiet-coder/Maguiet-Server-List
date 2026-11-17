@@ -4,5 +4,14 @@
 // Tipos: nivel, eliminado, renombrado, puntos, dificultad, puesto, record, pack, anuncio.
 
 const CAMBIOS = [
-  { fecha: "2026-11-16", tipo: "anuncio", texto: "Estrenamos el apartado Cambios: aquí verás cada nivel nuevo, cambio de puntos o de puesto y cada pack nuevo." }
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puntos",
+  "texto": "Bioluminescence: 80 → 78 pts."
+ },
+ {
+  "fecha": "2026-11-16",
+  "tipo": "anuncio",
+  "texto": "Estrenamos el apartado Cambios: aquí verás cada nivel nuevo, cambio de puntos o de puesto y cada pack nuevo."
+ }
 ];
