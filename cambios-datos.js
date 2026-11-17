@@ -6,6 +6,46 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Take my hand (#42, 100 pts, Medium Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Weird (#44, 73 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Shiver (#45, 70 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Ispywithmylittleeye (#46, 65 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Speed Racer (#47, 64 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Platinum Adventure (#48, 63 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: The Lightning Road (#49, 62 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: The Nightmare (#50, 60 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "record",
   "texto": "Maguiet se ha pasado clubstep."
  },
