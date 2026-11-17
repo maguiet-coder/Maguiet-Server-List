@@ -515,7 +515,7 @@ const NIVELES = [
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
     "creador": "Maguiet",
-    "puntos": 80,
+    "puntos": 78,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
