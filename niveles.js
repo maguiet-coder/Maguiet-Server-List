@@ -520,6 +520,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
@@ -558,6 +561,19 @@ const NIVELES = [
       },
       {
         "jugador": "NeuxGMD"
+      }
+    ]
+  },
+  {
+    "nombre": "Skeletal Shenanigans ",
+    "video": "https://youtu.be/mgzTHUKATqo",
+    "id": "118509879",
+    "creador": "YoReid",
+    "puntos": 380,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
       }
     ]
   }
