@@ -6,6 +6,16 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Teory of everything 2 (#43, 54 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: clubstep (#44, 50 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "puesto",
   "texto": "Skeletal Shenanigans : sube del puesto #42 al #38."
  },
