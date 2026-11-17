@@ -601,7 +601,7 @@ const NIVELES = [
         "jugador": "Quarius"
       },
       {
-        "jugador": "NeuxGMD"
+        "jugador": "YtNeux"
       }
     ]
   },
