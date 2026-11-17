@@ -1,4 +1,10 @@
 // Dibuja la lista a partir de niveles.js. No hace falta tocarlo.
+if (typeof NIVELES === "undefined" || !Array.isArray(NIVELES)) {
+  const aviso = document.getElementById("list-empty");
+  aviso.hidden = false;
+  aviso.textContent = "No se han podido cargar los niveles. Revisa que niveles.js esté bien escrito (comas, comillas y llaves).";
+  throw new Error("NIVELES no está definido");
+}
 const $ = (id) => document.getElementById(id);
 const lista = $("level-list"), vacio = $("list-empty"), dialog = $("level-dialog"), buscar = $("buscar");
 const els = {
@@ -14,7 +20,7 @@ function dibujar(filtro) {
 
   NIVELES.forEach((nivel, i) => {
     const puesto = i + 1; // el puesto lo decide el orden de la lista
-    if (q && !coincide(q, puesto, [nivel.nombre, nivel.creador], [nivel.id])) return;
+    if (q && !(typeof coincide === "function" ? coincide(q, puesto, [nivel.nombre, nivel.creador], [nivel.id]) : [nivel.nombre, nivel.creador, nivel.id].join(" ").toLowerCase().includes(q))) return;
     mostrados++;
     const vid = videoId(nivel.video);
 
@@ -108,8 +114,10 @@ function abrir(nivel, puesto) {
   els.difficulty.dataset.level = slug(nivel.dificultad);
   els.creator.textContent = nivel.creador; // como creador no lleva corona
   els.id.textContent = nivel.id;
-  els.gd.hidden = !nivel.id;
-  els.gd.href = `https://gdbrowser.com/${encodeURIComponent(String(nivel.id).trim())}`;
+  if (els.gd) {
+    els.gd.hidden = !nivel.id;
+    els.gd.href = `https://gdbrowser.com/${encodeURIComponent(String(nivel.id).trim())}`;
+  }
   els.copy.textContent = "Copiar ID";
   els.copy.onclick = () => copiar(String(nivel.id), () => { els.copy.textContent = "ID copiado"; });
 
@@ -138,6 +146,7 @@ dialog.addEventListener("click", (e) => {
   const r = dialog.getBoundingClientRect();
   if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close();
 });
-buscar.addEventListener("input", () => dibujar(buscar.value));
-$("ir-final").addEventListener("click", irAlFinal);
 dibujar("");
+buscar.addEventListener("input", () => dibujar(buscar.value));
+const botonFinal = $("ir-final");
+if (botonFinal && typeof irAlFinal === "function") botonFinal.addEventListener("click", irAlFinal);

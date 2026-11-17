@@ -1,7 +1,14 @@
+if (typeof NIVELES === "undefined" || !Array.isArray(NIVELES)) {
+  const aviso = document.getElementById("list-empty");
+  aviso.hidden = false;
+  aviso.textContent = "No se han podido cargar los niveles. Revisa que niveles.js esté bien escrito (comas, comillas y llaves).";
+  throw new Error("NIVELES no está definido");
+}
+const packsLista = typeof PACKS === "undefined" ? [] : PACKS;
 const cont = document.getElementById("pack-list");
-document.getElementById("list-empty").hidden = PACKS.length > 0;
+document.getElementById("list-empty").hidden = packsLista.length > 0;
 
-PACKS.forEach((pack) => {
+packsLista.forEach((pack) => {
   const li = document.createElement("li");
   const caja = document.createElement("article");
   caja.className = "pack";

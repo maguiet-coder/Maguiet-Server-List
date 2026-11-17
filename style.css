@@ -1166,3 +1166,14 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .subir.visible { opacity: 1; pointer-events: auto; transform: none; }
 .subir:hover { background: var(--card-hover); }
+
+/* ---------- Hub: tres botones en una fila y dos en la de abajo ---------- */
+
+.hub-grid { grid-template-columns: repeat(6, 1fr); }
+.hub-grid .hub-btn { grid-column: span 2; }
+.hub-grid .hub-btn:nth-child(n+4) { grid-column: span 3; }
+
+@media (max-width: 520px) {
+  .hub-grid { grid-template-columns: 1fr; }
+  .hub-grid .hub-btn, .hub-grid .hub-btn:nth-child(n+4) { grid-column: auto; }
+}

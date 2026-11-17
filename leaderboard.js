@@ -1,4 +1,11 @@
 // Clasificación general. Al pulsar un jugador se despliegan sus completions y sus packs.
+if (typeof NIVELES === "undefined" || !Array.isArray(NIVELES)) {
+  const aviso = document.getElementById("list-empty");
+  aviso.hidden = false;
+  aviso.textContent = "No se han podido cargar los niveles. Revisa que niveles.js esté bien escrito (comas, comillas y llaves).";
+  throw new Error("NIVELES no está definido");
+}
+const packsLista = typeof PACKS === "undefined" ? [] : PACKS;
 const pts = (n) => Number(n) || 0;
 const el = (tag, cls, txt) => {
   const e = document.createElement(tag);
@@ -26,7 +33,7 @@ function calcular() {
     j.completions.sort((a, b) => pts(b.nivel.puntos) - pts(a.nivel.puntos) || a.puesto - b.puesto);
     j.hardest = j.completions[0];
     const hechos = j.completions.map((c) => c.nivel.nombre);
-    PACKS.forEach((p) => {
+    packsLista.forEach((p) => {
       if (p.niveles.length && p.niveles.every((n) => hechos.includes(n))) {
         j.packs.push(p);
         j.puntos += pts(p.puntos);
@@ -138,5 +145,7 @@ function filtrar() {
   vacio.textContent = jugadores.length ? "Ningún jugador coincide con la búsqueda." : "Todavía no hay jugadores en la clasificación.";
   vacio.hidden = visibles > 0;
 }
-document.getElementById("buscar").addEventListener("input", filtrar);
-document.getElementById("ir-final").addEventListener("click", irAlFinal);
+const cajaBuscar = document.getElementById("buscar");
+if (cajaBuscar) cajaBuscar.addEventListener("input", filtrar);
+const botonFinal = document.getElementById("ir-final");
+if (botonFinal && typeof irAlFinal === "function") botonFinal.addEventListener("click", irAlFinal);
