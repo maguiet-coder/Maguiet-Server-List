@@ -547,6 +547,19 @@ const NIVELES = [
         "jugador": "NeuxGMD"
       }
     ]
+  },
+  {
+    "nombre": "Electrodinamix v2",
+    "video": "",
+    "id": "839175",
+    "creador": "IIInePtuneIII",
+    "puntos": 250,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aimam"
+      }
+    ]
   }
 ];
 
