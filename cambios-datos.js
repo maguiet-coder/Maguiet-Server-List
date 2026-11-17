@@ -7,6 +7,16 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-17",
   "tipo": "record",
+  "texto": "Aiman89 se ha pasado Akineract."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Skeletal Shenanigans  (#42, 380 pts, Medium Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
   "texto": "Aiman89 se ha pasado B."
  },
  {
