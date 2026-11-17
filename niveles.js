@@ -621,6 +621,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
@@ -681,6 +684,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
@@ -722,6 +728,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
