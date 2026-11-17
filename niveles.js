@@ -507,6 +507,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -520,6 +523,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -549,6 +555,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -600,6 +609,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -613,6 +625,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -626,6 +641,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -639,6 +657,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -652,6 +673,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -665,6 +689,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -678,6 +705,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -694,6 +724,9 @@ const NIVELES = [
       },
       {
         "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -710,6 +743,9 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   }
