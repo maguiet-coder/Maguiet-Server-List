@@ -540,7 +540,7 @@ const NIVELES = [
 // PACKS: quien completa TODOS los niveles de un pack gana sus puntos extra.
 const PACKS = [
   {
-    "nombre": "Pack Maguiet",
+    "nombre": "MAGUIET Pack",
     "puntos": 50,
     "niveles": [
       "Ultimate MortalTerra",
@@ -548,12 +548,12 @@ const PACKS = [
     ]
   },
   {
-    "nombre": "AFTERCATABATH",
+    "nombre": "AFTERCATABATH Pack",
     "puntos": 500,
     "niveles": [
-      "Bloodbath",
       "Cataclysm",
-      "aftermath"
+      "aftermath",
+      "Bloodbath"
     ]
   }
 ];
