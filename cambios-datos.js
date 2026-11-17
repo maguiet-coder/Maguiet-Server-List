@@ -6,6 +6,66 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Skeletal Shenanigans ."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado B."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Electrodinamix v2."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Weird."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Shiver."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Ispywithmylittleeye."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Speed Racer."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Platinum Adventure."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado The Lightning Road."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado The Nightmare."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado Teory of everything 2."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "LeXa [GD] se ha pasado clubstep."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "pack",
   "texto": "Pack renombrado: AFTERCATABATH Pack → Apocaliptic Trilogy Pack."
  },
