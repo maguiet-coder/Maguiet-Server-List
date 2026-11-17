@@ -6,6 +6,26 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "puntos",
+  "texto": "B: 200 → 360 pts."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "B: sube del puesto #40 al #38."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Akineract: baja del puesto #38 al #39."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Bioluminescence: baja del puesto #39 al #40."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "nivel",
   "texto": "Nuevo nivel: B (#40, 200 pts, Medium Demon)."
  },
