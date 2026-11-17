@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "Maguiet se ha pasado clubstep."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Teory of everything 2 (#43, 54 pts, Easy Demon)."
  },
