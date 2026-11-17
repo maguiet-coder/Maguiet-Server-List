@@ -553,6 +553,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Take my hand",
+    "video": "https://youtu.be/7uDySSZxxIk?si=YibkU2Ly8aEhwCOV",
+    "id": "146273838",
+    "creador": "LewinGD",
+    "puntos": 100,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      }
+    ]
+  },
+  {
     "nombre": "Bioluminescence",
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
@@ -574,6 +587,97 @@ const NIVELES = [
       },
       {
         "jugador": "NeuxGMD"
+      }
+    ]
+  },
+  {
+    "nombre": "Weird",
+    "video": "https://youtu.be/AJwI0ngeSto?si=roIVocLqKpcOGE-x",
+    "id": "76564776",
+    "creador": "TheL2rty",
+    "puntos": 73,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      }
+    ]
+  },
+  {
+    "nombre": "Shiver",
+    "video": "https://youtu.be/TRcvzgpTMO8?si=sDryeU-ykpjQwohD",
+    "id": "56210242",
+    "creador": "SpKale",
+    "puntos": 70,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      }
+    ]
+  },
+  {
+    "nombre": "Ispywithmylittleeye",
+    "video": "https://youtu.be/Ow7nDnZTbDw?si=NuUXXL6DaQvhea2w",
+    "id": "89886591",
+    "creador": "Voxicat",
+    "puntos": 65,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      }
+    ]
+  },
+  {
+    "nombre": "Speed Racer",
+    "video": "https://youtu.be/R8RsJVKKd8w?si=wvyuLqyqJPDt37le",
+    "id": "3543219",
+    "creador": "ZentycAlpha",
+    "puntos": 64,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      }
+    ]
+  },
+  {
+    "nombre": "Platinum Adventure",
+    "video": "https://youtu.be/DWGGjNnU5CA?si=ncamFXkGxn6c5hbQ",
+    "id": "5904109",
+    "creador": "Jerry Bronce V",
+    "puntos": 63,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      }
+    ]
+  },
+  {
+    "nombre": "The Lightning Road",
+    "video": "https://youtu.be/f3JAFKnY9Tw?si=bMQTAAlljkNxYZIu",
+    "id": "55520",
+    "creador": "Timeless Real",
+    "puntos": 62,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      }
+    ]
+  },
+  {
+    "nombre": "The Nightmare",
+    "video": "https://youtu.be/i0dlZgqA8ds?si=tzgMOEmghs0Es4oF",
+    "id": "13519",
+    "creador": "Jax",
+    "puntos": 60,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
       }
     ]
   },
