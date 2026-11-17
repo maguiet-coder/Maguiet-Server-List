@@ -6,6 +6,16 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "pack",
+  "texto": "Pack renombrado: Pack Maguiet → MAGUIET Pack."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "pack",
+  "texto": "Pack renombrado: AFTERCATABATH → AFTERCATABATH Pack."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "puntos",
   "texto": "Bioluminescence: 80 → 78 pts."
  },
