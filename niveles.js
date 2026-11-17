@@ -498,6 +498,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Skeletal Shenanigans ",
+    "video": "https://youtu.be/mgzTHUKATqo",
+    "id": "118509879",
+    "creador": "YoReid",
+    "puntos": 380,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "B",
     "video": "https://youtu.be/ohKPqGxotao",
     "id": "34085027",
@@ -561,19 +574,6 @@ const NIVELES = [
       },
       {
         "jugador": "NeuxGMD"
-      }
-    ]
-  },
-  {
-    "nombre": "Skeletal Shenanigans ",
-    "video": "https://youtu.be/mgzTHUKATqo",
-    "id": "118509879",
-    "creador": "YoReid",
-    "puntos": 380,
-    "dificultad": "Medium Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   }
