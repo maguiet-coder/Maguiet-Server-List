@@ -6,6 +6,21 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "puntos",
+  "texto": "Electrodinamix v2: 250 → 300 pts."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Electrodinamix v2: sube del puesto #41 al #40."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Bioluminescence: baja del puesto #40 al #41."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "record",
   "texto": "Aiman89 se ha pasado Electrodinamix v2."
  },
