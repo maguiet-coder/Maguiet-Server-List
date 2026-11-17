@@ -498,6 +498,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "B",
+    "video": "https://youtu.be/ohKPqGxotao",
+    "id": "34085027",
+    "creador": "Motleyorc",
+    "puntos": 360,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman 9/11/26"
+      }
+    ]
+  },
+  {
     "nombre": "Akineract",
     "video": "https://youtu.be/PYm7xbnQCvw?si=gGRAUhL_kY2fUUnI",
     "id": "135005345",
@@ -532,19 +545,6 @@ const NIVELES = [
       },
       {
         "jugador": "NeuxGMD"
-      }
-    ]
-  },
-  {
-    "nombre": "B",
-    "video": "https://youtu.be/ohKPqGxotao",
-    "id": "34085027",
-    "creador": "Motleyorc",
-    "puntos": 200,
-    "dificultad": "Medium Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman 9/11/26"
       }
     ]
   }
