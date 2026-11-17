@@ -7,6 +7,21 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-17",
   "tipo": "record",
+  "texto": "Aiman89 se ha pasado Weird."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "Aiman89 se ha pasado Speed Racer."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
+  "texto": "Aiman89 se ha pasado The Lightning Road."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "record",
   "texto": "YtNeux se ha pasado Bioluminescence."
  },
  {
