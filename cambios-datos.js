@@ -6,6 +6,31 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Skeletal Shenanigans : sube del puesto #42 al #38."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "B: baja del puesto #38 al #39."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Akineract: baja del puesto #39 al #40."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Electrodinamix v2: baja del puesto #40 al #41."
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "puesto",
+  "texto": "Bioluminescence: baja del puesto #41 al #42."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "record",
   "texto": "Aiman89 se ha pasado Akineract."
  },
