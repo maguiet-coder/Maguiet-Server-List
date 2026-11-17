@@ -510,6 +510,9 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -526,6 +529,9 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -612,6 +618,9 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -628,6 +637,9 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
@@ -644,6 +656,12 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -660,6 +678,9 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -676,6 +697,12 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -692,6 +719,9 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -708,6 +738,12 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -727,6 +763,12 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -746,6 +788,12 @@ const NIVELES = [
       },
       {
         "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   }
