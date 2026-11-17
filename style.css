@@ -1035,3 +1035,98 @@ a.copy { display: inline-block; text-decoration: none; }
 
 .chip[data-tipo="anuncio"] { background: var(--orange); color: #1a1a1d; }
 .chip[data-tipo="eliminado"] { color: #ff8a7a; border-color: rgba(255, 107, 90, 0.4); background: rgba(255, 107, 90, 0.12); }
+
+/* ---------- Ruleta ---------- */
+
+.hub-grid .hub-btn:nth-child(5) { animation-delay: 0.24s; }
+
+.caja {
+  padding: 1.3rem 1.5rem;
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 26px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 8px 24px rgba(0, 0, 0, 0.35);
+  animation: subir 0.4s ease both;
+}
+
+.caja[hidden] { display: none; }
+.caja-titulo { margin: 0 0 0.7rem; font-family: var(--font-display); font-size: 1.35rem; }
+h3.caja-titulo { margin-top: 1.3rem; font-size: 1.1rem; color: var(--orange); }
+.reglas-ruleta { margin: 0; padding-left: 1.3rem; line-height: 1.7; color: var(--muted); }
+.reglas-ruleta li { margin-bottom: 0.3rem; }
+.reglas-ruleta strong { color: var(--text); }
+
+.filtros { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.6rem; }
+
+.filtro {
+  padding: 0.45rem 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  background: var(--deep);
+  color: var(--muted);
+  font: 600 0.95rem var(--font-body);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.filtro small { margin-left: 0.5rem; opacity: 0.8; }
+.filtro[aria-pressed="true"] { border-color: var(--orange); background: var(--orange-soft); color: var(--orange); }
+.filtro:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.ruleta-acciones { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 1.1rem 0 0.8rem; }
+.grande { padding: 0.85rem 1.7rem; font-size: 1.1rem; }
+.copy.grande { padding: 0.7rem 1.3rem; font-size: 1rem; }
+.peligro { border-color: #ff7a6a; color: #ff8a7a; }
+.peligro:hover { background: #ff7a6a; color: #1a1a1d; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.objetivo { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.objetivo > div { display: grid; gap: 0.1rem; }
+
+.objetivo strong {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 13vw, 5.8rem);
+  font-weight: 800;
+  line-height: 0.95;
+  color: var(--orange);
+  text-shadow: 0 0 28px rgba(255, 138, 43, 0.5);
+  font-variant-numeric: tabular-nums;
+}
+
+.saltos-caja { text-align: right; }
+.saltos { display: inline-flex; gap: 0.4rem; margin-top: 0.3rem; }
+.punto { width: 14px; height: 14px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 10px rgba(255, 138, 43, 0.5); }
+.punto.usado { background: transparent; border: 2px solid var(--line); box-shadow: none; }
+
+.barra { height: 12px; margin: 1rem 0; overflow: hidden; border: 1px solid var(--line); border-radius: 999px; background: var(--deep); }
+.barra i { display: block; width: 0; height: 100%; background: linear-gradient(90deg, #ff9a3d, #e8641c); transition: width 0.4s; }
+
+.reel {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.8rem;
+  border: 1.5px solid var(--orange);
+  border-radius: 22px;
+  background: var(--orange-soft);
+}
+
+.reel-thumb { flex: none; width: clamp(120px, 28vw, 260px); aspect-ratio: 16 / 9; overflow: hidden; border-radius: 16px; background: var(--deep); }
+.reel-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.reel-thumb img[hidden] { display: none; }
+.reel-cuerpo { display: grid; gap: 0.5rem; min-width: 0; }
+.reel-info { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.reel-nombre { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.3rem, 4vw, 2rem); line-height: 1.15; overflow-wrap: anywhere; }
+.reel.girando .reel-thumb, .reel.girando .reel-cuerpo { filter: blur(1.5px); opacity: 0.8; }
+.reel-thumb, .reel-cuerpo { transition: filter 0.1s, opacity 0.1s; }
+
+.historial-titulo { margin-top: 1.2rem; }
+.fin-titulo { font-size: clamp(1.6rem, 5vw, 2.4rem); color: var(--orange); }
+
+@media (max-width: 560px) {
+  .caja { padding: 1.1rem; border-radius: 22px; }
+  .reel { flex-direction: column; align-items: stretch; }
+  .reel-thumb { width: 100%; }
+  .saltos-caja { text-align: left; }
+  .grande { width: 100%; text-align: center; }
+}

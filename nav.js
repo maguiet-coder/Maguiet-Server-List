@@ -1,5 +1,5 @@
 // Código común a todas las páginas: menú lateral y utilidades.
-const SECCIONES = [["Inicio","index.html"],["Lista","lista.html"],["Leaderboard","leaderboard.html"],["Packs","packs.html"],["Cambios","cambios.html"],["Normas","normas.html"],["Editar","editar.html"]];
+const SECCIONES = [["Inicio","index.html"],["Lista","lista.html"],["Leaderboard","leaderboard.html"],["Packs","packs.html"],["Cambios","cambios.html"],["Ruleta","ruleta.html"],["Normas","normas.html"],["Editar","editar.html"]];
 
 function videoId(v) {
   const t = String(v || "").trim();

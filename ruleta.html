@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruleta · Maguiet Server List</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Ruleta</h1>
+    <p class="tagline">Del 1% al 100% con un nivel de la lista al azar en cada paso.</p>
+  </header>
+
+  <main>
+    <!-- 1. Inicio -->
+    <section id="vista-inicio" class="caja">
+      <h2 class="caja-titulo">Cómo funciona</h2>
+      <ol class="reglas-ruleta">
+        <li>Te toca un nivel al azar de la lista. Tu objetivo empieza en el <strong>1%</strong>.</li>
+        <li>Llega a ese porcentaje en Geometry Dash y pulsa <strong>¡Conseguido!</strong>: el objetivo sube un 1% y la ruleta gira hacia otro nivel.</li>
+        <li>Puedes <strong>saltar</strong> un nivel hasta <strong>3 veces</strong>. Al saltar, el objetivo no sube.</li>
+        <li>Si no puedes más, <strong>te rindes</strong>. Si llegas al <strong>100%</strong>, ganas la ruleta.</li>
+      </ol>
+
+      <h3 class="caja-titulo">Dificultades</h3>
+      <div id="filtros" class="filtros"></div>
+      <p id="pool-info" class="hint"></p>
+
+      <div class="ruleta-acciones">
+        <button class="primary grande" id="empezar" type="button">Empezar la ruleta</button>
+        <button class="copy grande" id="continuar" type="button" hidden>Continuar partida guardada</button>
+      </div>
+      <p class="hint">Tu mejor marca en este navegador: <strong id="mejor">0%</strong></p>
+    </section>
+
+    <!-- 2. Partida -->
+    <section id="vista-juego" class="caja" hidden>
+      <div class="objetivo">
+        <div>
+          <span class="hint">Objetivo</span>
+          <strong id="objetivo">1%</strong>
+        </div>
+        <div class="saltos-caja">
+          <span id="saltos-texto" class="hint"></span>
+          <span id="saltos" class="saltos" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="barra" role="progressbar" aria-label="Progreso de la ruleta"><i id="barra-relleno"></i></div>
+
+      <div class="reel" id="reel" aria-live="polite">
+        <div class="reel-thumb"><img id="r-img" alt=""></div>
+        <div class="reel-cuerpo">
+          <div class="reel-info">
+            <span class="chip" id="r-puesto"></span>
+            <span class="badge" id="r-dif"></span>
+            <span class="chip" id="r-pts"></span>
+          </div>
+          <div class="reel-nombre" id="r-nombre"></div>
+          <div class="reel-info">
+            <span class="hint" id="r-id"></span>
+            <button class="copy" id="r-copiar" type="button">Copiar ID</button>
+            <a class="copy" id="r-gd" href="https://gdbrowser.com/" target="_blank" rel="noopener">Ver en GDBrowser</a>
+            <a class="copy" id="r-yt" href="#" target="_blank" rel="noopener">Ver vídeo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ruleta-acciones">
+        <button class="primary grande" id="conseguido" type="button">✔ ¡Conseguido! (+1%)</button>
+        <button class="copy grande" id="saltar" type="button">Saltar nivel</button>
+        <button class="copy grande peligro" id="rendirse" type="button">Rendirme</button>
+      </div>
+
+      <h3 class="panel-title historial-titulo">Niveles conseguidos</h3>
+      <ul id="historial" class="row-list historial"></ul>
+    </section>
+
+    <!-- 3. Final -->
+    <section id="vista-fin" class="caja" hidden>
+      <h2 class="caja-titulo fin-titulo" id="fin-titulo"></h2>
+      <p class="hint" id="fin-resumen"></p>
+      <ul id="fin-lista" class="row-list historial"></ul>
+      <div class="ruleta-acciones">
+        <button class="primary grande" id="otra" type="button">Jugar otra vez</button>
+        <button class="copy grande" id="compartir" type="button">Copiar resultado</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="niveles.js"></script>
+  <script src="nav.js"></script>
+  <script src="ruleta.js"></script>
+  <script src="particulas.js"></script>
+</body>
+</html>
