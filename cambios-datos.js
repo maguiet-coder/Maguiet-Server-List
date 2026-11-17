@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: B (#40, 200 pts, Medium Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "pack",
   "texto": "Pack renombrado: Pack Maguiet → MAGUIET Pack."
  },
