@@ -506,7 +506,7 @@ const NIVELES = [
     "dificultad": "Medium Demon",
     "leaderboard": [
       {
-        "jugador": "Aiman 9/11/26"
+        "jugador": "Aiman89"
       }
     ]
   },
