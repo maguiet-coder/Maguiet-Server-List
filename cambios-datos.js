@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-17",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Electrodinamix v2 (#41, 250 pts, Medium Demon)."
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "puntos",
   "texto": "B: 200 → 360 pts."
  },
