@@ -534,6 +534,19 @@ const NIVELES = [
         "jugador": "NeuxGMD"
       }
     ]
+  },
+  {
+    "nombre": "B",
+    "video": "https://youtu.be/ohKPqGxotao",
+    "id": "34085027",
+    "creador": "Motleyorc",
+    "puntos": 200,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman 9/11/26"
+      }
+    ]
   }
 ];
 
