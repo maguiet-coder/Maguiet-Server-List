@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-18",
+  "tipo": "puesto",
+  "texto": "Shine: sube del puesto #57 al #41."
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Shine (#57, 300 pts, Medium Demon)."
  },
