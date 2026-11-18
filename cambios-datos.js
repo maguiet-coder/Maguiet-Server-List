@@ -6,6 +6,51 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-18",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Deadlocked (#47, 70 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "puntos",
+  "texto": "Teory of everything 2: 54 → 60 pts."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "puntos",
+  "texto": "clubstep: 50 → 55 pts."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "puntos",
+  "texto": "The Nightmare: 60 → 50 pts."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "puesto",
+  "texto": "The Nightmare: baja del puesto #55 al #58."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "pack",
+  "texto": "Pack renombrado: MAGUIET Pack → Maguiet Pack."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "pack",
+  "texto": "Nuevo pack: RobTop Pack (+20 pts por completar clubstep, Teory of everything 2, Deadlocked)."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "pack",
+  "texto": "Nuevo pack: Beginner Pack 1 (+30 pts por completar The Lightning Road, Platinum Adventure, Speed Racer)."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "pack",
+  "texto": "Nuevo pack: Beginner Pack 2 (+40 pts por completar MayMory, Ispywithmylittleeye, Weird)."
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "puntos",
   "texto": "Shine: 300 → 99 pts."
  },
