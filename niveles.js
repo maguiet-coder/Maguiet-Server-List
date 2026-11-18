@@ -39,7 +39,7 @@ const NIVELES = [
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       }
     ]
   },
@@ -91,7 +91,7 @@ const NIVELES = [
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       },
       {
         "jugador": "LeXa [GD]"
@@ -412,7 +412,7 @@ const NIVELES = [
         "jugador": "LeXa [GD]"
       },
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       }
     ]
   },
@@ -421,7 +421,7 @@ const NIVELES = [
     "video": "https://youtu.be/vH1sx4XLnHI",
     "id": "114933189",
     "creador": "sparktwo",
-    "puntos": 60,
+    "puntos": 1060,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -552,7 +552,7 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "Electrodinamix v2",
+    "nombre": "Electrodynamix v2",
     "video": "https://youtu.be/PE6DD-98BKA",
     "id": "839175",
     "creador": "IIInePtuneIII",
@@ -581,6 +581,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Shine",
+    "video": "https://youtu.be/IPaNsFXHMb0",
+    "id": "60473779",
+    "creador": "Ballons",
+    "puntos": 99,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Bioluminescence",
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
@@ -595,13 +608,26 @@ const NIVELES = [
         "jugador": "LeXa [GD]"
       },
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       },
       {
         "jugador": "Quarius"
       },
       {
         "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "Retro Circles ",
+    "video": "https://youtu.be/yVxKTQPzyus",
+    "id": "14000484",
+    "creador": "Nacho21",
+    "puntos": 75,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
@@ -624,6 +650,22 @@ const NIVELES = [
       },
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
+      }
+    ]
+  },
+  {
+    "nombre": "Deadlocked",
+    "video": "https://youtu.be/Ez71k4pW3LM?si=g0GKHKJNPkxQptuU",
+    "id": "Robtop Level",
+    "creador": "Robtop",
+    "puntos": 70,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -665,6 +707,22 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
+      }
+    ]
+  },
+  {
+    "nombre": "PHJORK",
+    "video": "https://youtu.be/3Kle1U8xEfk",
+    "id": "56587109",
+    "creador": "Cerufiffy",
+    "puntos": 65,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
@@ -687,6 +745,9 @@ const NIVELES = [
       },
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -709,6 +770,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -731,37 +795,47 @@ const NIVELES = [
       },
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
   {
-    "nombre": "The Nightmare",
-    "video": "https://youtu.be/i0dlZgqA8ds?si=tzgMOEmghs0Es4oF",
-    "id": "13519",
-    "creador": "Jax",
-    "puntos": 60,
+    "nombre": "MayMory",
+    "video": "https://youtu.be/Fm5VOrSiVOw",
+    "id": "80433444",
+    "creador": "ItzKiba",
+    "puntos": 65,
     "dificultad": "Easy Demon",
     "leaderboard": [
-      {
-        "jugador": "Rrodbarrio"
-      },
-      {
-        "jugador": "LeXa [GD]"
-      },
       {
         "jugador": "Aiman89"
       },
       {
-        "jugador": "YtNeux"
+        "jugador": "Maguiet"
       }
     ]
   },
   {
-    "nombre": "Teory of everything 2",
+    "nombre": "Blue Hell",
+    "video": "https://youtu.be/idRSi5G7ACg",
+    "id": "11317271",
+    "creador": "LaZye",
+    "puntos": 60,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Theory of everything 2",
     "video": "https://www.youtube.com/watch?v=medoq_Znhaw&pp=ygUFdG9lIDI%3D",
     "id": "Robtop level",
     "creador": "Robtop",
-    "puntos": 54,
+    "puntos": 60,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -786,7 +860,7 @@ const NIVELES = [
     "video": "https://www.youtube.com/watch?v=VInQkeec188&pp=ygUIY2x1YnN0ZXA%3D",
     "id": "Robtop level",
     "creador": "Robtop",
-    "puntos": 50,
+    "puntos": 55,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -805,13 +879,38 @@ const NIVELES = [
         "jugador": "YtNeux"
       }
     ]
+  },
+  {
+    "nombre": "The Nightmare",
+    "video": "https://youtu.be/i0dlZgqA8ds?si=tzgMOEmghs0Es4oF",
+    "id": "13519",
+    "creador": "Jax",
+    "puntos": 50,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
+      }
+    ]
   }
 ];
 
 // PACKS: quien completa TODOS los niveles de un pack gana sus puntos extra.
 const PACKS = [
   {
-    "nombre": "MAGUIET Pack",
+    "nombre": "Maguiet Pack",
     "puntos": 50,
     "niveles": [
       "Ultimate MortalTerra",
@@ -825,6 +924,33 @@ const PACKS = [
       "Cataclysm",
       "aftermath",
       "Bloodbath"
+    ]
+  },
+  {
+    "nombre": "RobTop Pack",
+    "puntos": 20,
+    "niveles": [
+      "clubstep",
+      "Theory of everything 2",
+      "Deadlocked"
+    ]
+  },
+  {
+    "nombre": "Beginner Pack 1",
+    "puntos": 30,
+    "niveles": [
+      "The Lightning Road",
+      "Platinum Adventure",
+      "Speed Racer"
+    ]
+  },
+  {
+    "nombre": "Beginner Pack 2",
+    "puntos": 40,
+    "niveles": [
+      "MayMory",
+      "Ispywithmylittleeye",
+      "Weird"
     ]
   }
 ];
