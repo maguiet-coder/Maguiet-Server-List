@@ -421,7 +421,7 @@ const NIVELES = [
     "video": "https://youtu.be/vH1sx4XLnHI",
     "id": "114933189",
     "creador": "sparktwo",
-    "puntos": 60,
+    "puntos": 1060,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
