@@ -831,6 +831,19 @@ const NIVELES = [
         "jugador": "YtNeux"
       }
     ]
+  },
+  {
+    "nombre": "Retro Circles ",
+    "video": "https://youtu.be/yVxKTQPzyus",
+    "id": "14000484",
+    "creador": "Nacho21",
+    "puntos": 70,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
   }
 ];
 
