@@ -1,9 +1,14 @@
 // Historial de cambios de la web (apartado "Cambios"). Lo más nuevo va arriba.
 // Se rellena solo al publicar desde Editar, pero también puedes añadir entradas a mano:
 //   { fecha: "2026-11-16", tipo: "anuncio", texto: "Lo que quieras anunciar" },
-// Tipos: nivel, eliminado, renombrado, puntos, dificultad, puesto, record, pack, anuncio.
+// Tipos: nivel, eliminado, renombrado, puntos, dificultad, puesto, pack, anuncio.
 
 const CAMBIOS = [
+ {
+  "fecha": "2026-11-18",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Blue Hell (#53, 60 pts, Easy Demon)."
+ },
  {
   "fecha": "2026-11-17",
   "tipo": "record",
