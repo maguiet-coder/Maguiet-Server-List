@@ -7,6 +7,16 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-18",
   "tipo": "nivel",
+  "texto": "Nuevo nivel: PHJORK (#47, 65 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "puesto",
+  "texto": "Blue Hell: sube del puesto #53 al #51."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "nivel",
   "texto": "Nuevo nivel: Blue Hell (#53, 60 pts, Easy Demon)."
  },
  {
