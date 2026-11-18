@@ -657,6 +657,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Deadlocked",
+    "video": "https://youtu.be/Ez71k4pW3LM?si=g0GKHKJNPkxQptuU",
+    "id": "Robtop Level",
+    "creador": "Robtop",
+    "puntos": 70,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Maguiet"
+      }
+    ]
+  },
+  {
     "nombre": "Shiver",
     "video": "https://youtu.be/TRcvzgpTMO8?si=sDryeU-ykpjQwohD",
     "id": "56210242",
@@ -818,36 +831,11 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "The Nightmare",
-    "video": "https://youtu.be/i0dlZgqA8ds?si=tzgMOEmghs0Es4oF",
-    "id": "13519",
-    "creador": "Jax",
-    "puntos": 60,
-    "dificultad": "Easy Demon",
-    "leaderboard": [
-      {
-        "jugador": "Rrodbarrio"
-      },
-      {
-        "jugador": "LeXa [GD]"
-      },
-      {
-        "jugador": "Aiman89"
-      },
-      {
-        "jugador": "YtNeux"
-      },
-      {
-        "jugador": "Maguiet"
-      }
-    ]
-  },
-  {
     "nombre": "Teory of everything 2",
     "video": "https://www.youtube.com/watch?v=medoq_Znhaw&pp=ygUFdG9lIDI%3D",
     "id": "Robtop level",
     "creador": "Robtop",
-    "puntos": 54,
+    "puntos": 60,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -872,7 +860,7 @@ const NIVELES = [
     "video": "https://www.youtube.com/watch?v=VInQkeec188&pp=ygUIY2x1YnN0ZXA%3D",
     "id": "Robtop level",
     "creador": "Robtop",
-    "puntos": 50,
+    "puntos": 55,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -891,13 +879,38 @@ const NIVELES = [
         "jugador": "YtNeux"
       }
     ]
+  },
+  {
+    "nombre": "The Nightmare",
+    "video": "https://youtu.be/i0dlZgqA8ds?si=tzgMOEmghs0Es4oF",
+    "id": "13519",
+    "creador": "Jax",
+    "puntos": 50,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
+      }
+    ]
   }
 ];
 
 // PACKS: quien completa TODOS los niveles de un pack gana sus puntos extra.
 const PACKS = [
   {
-    "nombre": "MAGUIET Pack",
+    "nombre": "Maguiet Pack",
     "puntos": 50,
     "niveles": [
       "Ultimate MortalTerra",
@@ -911,6 +924,33 @@ const PACKS = [
       "Cataclysm",
       "aftermath",
       "Bloodbath"
+    ]
+  },
+  {
+    "nombre": "RobTop Pack",
+    "puntos": 20,
+    "niveles": [
+      "clubstep",
+      "Teory of everything 2",
+      "Deadlocked"
+    ]
+  },
+  {
+    "nombre": "Beginner Pack 1",
+    "puntos": 30,
+    "niveles": [
+      "The Lightning Road",
+      "Platinum Adventure",
+      "Speed Racer"
+    ]
+  },
+  {
+    "nombre": "Beginner Pack 2",
+    "puntos": 40,
+    "niveles": [
+      "MayMory",
+      "Ispywithmylittleeye",
+      "Weird"
     ]
   }
 ];
