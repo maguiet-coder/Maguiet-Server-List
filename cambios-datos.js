@@ -7,6 +7,11 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-18",
   "tipo": "nivel",
+  "texto": "Nuevo nivel: Retro Circles  (#55, 70 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "nivel",
   "texto": "Nuevo nivel: PHJORK (#47, 65 pts, Easy Demon)."
  },
  {
