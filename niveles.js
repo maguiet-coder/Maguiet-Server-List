@@ -552,6 +552,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Shine",
+    "video": "https://youtu.be/IPaNsFXHMb0",
+    "id": "60473779",
+    "creador": "Ballons",
+    "puntos": 300,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Electrodinamix v2",
     "video": "https://youtu.be/PE6DD-98BKA",
     "id": "839175",
@@ -855,19 +868,6 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
-      }
-    ]
-  },
-  {
-    "nombre": "Shine",
-    "video": "https://youtu.be/IPaNsFXHMb0",
-    "id": "60473779",
-    "creador": "Ballons",
-    "puntos": 300,
-    "dificultad": "Medium Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   }
