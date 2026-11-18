@@ -552,7 +552,7 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "Electrodinamix v2",
+    "nombre": "Electrodynamix v2",
     "video": "https://youtu.be/PE6DD-98BKA",
     "id": "839175",
     "creador": "IIInePtuneIII",
