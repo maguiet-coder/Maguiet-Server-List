@@ -650,6 +650,9 @@ const NIVELES = [
       },
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -691,6 +694,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -726,6 +732,9 @@ const NIVELES = [
       },
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -748,6 +757,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -770,6 +782,9 @@ const NIVELES = [
       },
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -783,6 +798,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -818,6 +836,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
