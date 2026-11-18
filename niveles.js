@@ -498,6 +498,44 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Skeletal Shenanigans ",
+    "video": "https://youtu.be/mgzTHUKATqo",
+    "id": "118509879",
+    "creador": "YoReid",
+    "puntos": 380,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "B",
+    "video": "https://youtu.be/ohKPqGxotao",
+    "id": "34085027",
+    "creador": "Motleyorc",
+    "puntos": 360,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
     "nombre": "Akineract",
     "video": "https://youtu.be/PYm7xbnQCvw?si=gGRAUhL_kY2fUUnI",
     "id": "135005345",
@@ -507,6 +545,38 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Electrodinamix v2",
+    "video": "https://youtu.be/PE6DD-98BKA",
+    "id": "839175",
+    "creador": "IIInePtuneIII",
+    "puntos": 300,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Take my hand",
+    "video": "https://youtu.be/7uDySSZxxIk?si=YibkU2Ly8aEhwCOV",
+    "id": "146273838",
+    "creador": "LewinGD",
+    "puntos": 100,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
       }
     ]
   },
@@ -531,7 +601,208 @@ const NIVELES = [
         "jugador": "Quarius"
       },
       {
-        "jugador": "NeuxGMD"
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "Weird",
+    "video": "https://youtu.be/AJwI0ngeSto?si=roIVocLqKpcOGE-x",
+    "id": "76564776",
+    "creador": "TheL2rty",
+    "puntos": 73,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Shiver",
+    "video": "https://youtu.be/TRcvzgpTMO8?si=sDryeU-ykpjQwohD",
+    "id": "56210242",
+    "creador": "SpKale",
+    "puntos": 70,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Ispywithmylittleeye",
+    "video": "https://youtu.be/Ow7nDnZTbDw?si=NuUXXL6DaQvhea2w",
+    "id": "89886591",
+    "creador": "Voxicat",
+    "puntos": 65,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "Speed Racer",
+    "video": "https://youtu.be/R8RsJVKKd8w?si=wvyuLqyqJPDt37le",
+    "id": "3543219",
+    "creador": "ZentycAlpha",
+    "puntos": 64,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Platinum Adventure",
+    "video": "https://youtu.be/DWGGjNnU5CA?si=ncamFXkGxn6c5hbQ",
+    "id": "5904109",
+    "creador": "Jerry Bronce V",
+    "puntos": 63,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "The Lightning Road",
+    "video": "https://youtu.be/f3JAFKnY9Tw?si=bMQTAAlljkNxYZIu",
+    "id": "55520",
+    "creador": "Timeless Real",
+    "puntos": 62,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "The Nightmare",
+    "video": "https://youtu.be/i0dlZgqA8ds?si=tzgMOEmghs0Es4oF",
+    "id": "13519",
+    "creador": "Jax",
+    "puntos": 60,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "Teory of everything 2",
+    "video": "https://www.youtube.com/watch?v=medoq_Znhaw&pp=ygUFdG9lIDI%3D",
+    "id": "Robtop level",
+    "creador": "Robtop",
+    "puntos": 54,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Maguiet"
+      },
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "clubstep",
+    "video": "https://www.youtube.com/watch?v=VInQkeec188&pp=ygUIY2x1YnN0ZXA%3D",
+    "id": "Robtop level",
+    "creador": "Robtop",
+    "puntos": 50,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Rrodbarrio"
+      },
+      {
+        "jugador": "Maguiet"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      },
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   }
@@ -540,7 +811,7 @@ const NIVELES = [
 // PACKS: quien completa TODOS los niveles de un pack gana sus puntos extra.
 const PACKS = [
   {
-    "nombre": "Pack Maguiet",
+    "nombre": "MAGUIET Pack",
     "puntos": 50,
     "niveles": [
       "Ultimate MortalTerra",
@@ -548,12 +819,12 @@ const PACKS = [
     ]
   },
   {
-    "nombre": "AFTERCATABATH",
+    "nombre": "Apocaliptic Trilogy Pack",
     "puntos": 500,
     "niveles": [
-      "Bloodbath",
       "Cataclysm",
-      "aftermath"
+      "aftermath",
+      "Bloodbath"
     ]
   }
 ];
