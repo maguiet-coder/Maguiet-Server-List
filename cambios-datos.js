@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-18",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: MayMory (#56, 65 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "puntos",
   "texto": "Through The Decay: 60 → 1060 pts."
  },
