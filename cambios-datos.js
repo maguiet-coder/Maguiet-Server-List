@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-18",
+  "tipo": "puesto",
+  "texto": "MayMory: sube del puesto #56 al #52."
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "nivel",
   "texto": "Nuevo nivel: MayMory (#56, 65 pts, Easy Demon)."
  },
