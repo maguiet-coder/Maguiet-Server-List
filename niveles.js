@@ -39,7 +39,7 @@ const NIVELES = [
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       }
     ]
   },
@@ -91,7 +91,7 @@ const NIVELES = [
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       },
       {
         "jugador": "LeXa [GD]"
@@ -412,7 +412,7 @@ const NIVELES = [
         "jugador": "LeXa [GD]"
       },
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       }
     ]
   },
@@ -595,7 +595,7 @@ const NIVELES = [
         "jugador": "LeXa [GD]"
       },
       {
-        "jugador": "iPol"
+        "jugador": "zZenyth"
       },
       {
         "jugador": "Quarius"
