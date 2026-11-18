@@ -7,6 +7,11 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-18",
   "tipo": "puntos",
+  "texto": "Through The Decay: 60 → 1060 pts."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "puntos",
   "texto": "Retro Circles : 70 → 75 pts."
  },
  {
