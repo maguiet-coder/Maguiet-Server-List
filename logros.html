@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logros · Maguiet Server List</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Logros</h1>
+    <p class="tagline">Los hitos que se pueden conseguir y quién ya los tiene.</p>
+  </header>
+
+  <main>
+    <p class="hint logros-aviso">Esta web no tiene cuentas, así que no puede decirte cuáles has conseguido tú: es una guía. Los símbolos de cada jugador aparecen junto a su nombre en la <a href="leaderboard.html">Leaderboard</a>.</p>
+    <div id="logros-lista"></div>
+    <p id="list-empty" class="empty" hidden></p>
+  </main>
+
+  <dialog id="logro-dialog" class="level-dialog logro-dialog" aria-labelledby="lg-nombre">
+    <button class="close" id="lg-cerrar" type="button" aria-label="Cerrar">&times;</button>
+    <div class="lg-cab">
+      <span class="lg-emoji" id="lg-emoji" aria-hidden="true"></span>
+      <div>
+        <p class="hint" id="lg-tema"></p>
+        <h2 id="lg-nombre"></h2>
+      </div>
+    </div>
+    <p class="lg-larga" id="lg-larga"></p>
+    <h3 class="panel-title" id="lg-titulo-quien"></h3>
+    <ul id="lg-quien" class="row-list"></ul>
+    <p class="empty" id="lg-vacio">Todavía nadie lo ha conseguido. ¡Podrías ser el primero!</p>
+  </dialog>
+
+  <script src="niveles.js"></script>
+  <script src="jugadores.js"></script>
+  <script src="nav.js"></script>
+  <script src="logros.js"></script>
+  <script src="particulas.js"></script>
+</body>
+</html>
