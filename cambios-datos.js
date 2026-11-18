@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-18",
+  "tipo": "renombrado",
+  "texto": "Nivel renombrado: Teory of everything 2 → Theory of everything 2."
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Deadlocked (#47, 70 pts, Easy Demon)."
  },
