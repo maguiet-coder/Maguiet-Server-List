@@ -99,3 +99,10 @@ function copiar(texto, hecho) {
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") abrir(false); });
   document.body.append(btn, panel);
 })();
+
+(function pie() {
+  const f = document.createElement("footer");
+  f.className = "pie";
+  f.textContent = "Maguiet Server List · La Lista Oficial del Servidor";
+  document.body.appendChild(f);
+})();

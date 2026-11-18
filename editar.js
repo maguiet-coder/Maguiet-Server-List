@@ -141,11 +141,9 @@ function detectar() {
     if (b.nombre !== n.nombre) { renombres.set(b.nombre, n.nombre); add("renombrado", `Nivel renombrado: ${b.nombre} → ${n.nombre}.`); }
     if (b.puntos !== n.puntos) add("puntos", `${n.nombre}: ${b.puntos} → ${n.puntos} pts.`);
     if (b.dificultad !== n.dificultad) add("dificultad", `${n.nombre}: dificultad ${b.dificultad} → ${n.dificultad}.`);
-    const previos = (b.leaderboard || []).map((r) => r.jugador.trim().toLowerCase());
-    (n.leaderboard || []).forEach((r) => {
-      if (!previos.includes(r.jugador.trim().toLowerCase())) add("record", `${r.jugador} se ha pasado ${n.nombre}.`);
-    });
-    if (comunes.indexOf(n) !== antes.indexOf(n)) {
+    // Solo se anuncia si el nivel sube o baja 2 puestos o más. No cuentan los desplazamientos de 1 puesto
+    // ni los que provocan los niveles nuevos o eliminados.
+    if (Math.abs(comunes.indexOf(n) - antes.indexOf(n)) >= 2) {
       const viejo = ordenN.indexOf(n) + 1, nuevo = i + 1;
       add("puesto", `${n.nombre}: ${nuevo < viejo ? "sube" : "baja"} del puesto #${viejo} al #${nuevo}.`);
     }
@@ -323,7 +321,7 @@ const textoCambios = () =>
   "// Historial de cambios de la web (apartado \"Cambios\"). Lo más nuevo va arriba.\n" +
   "// Se rellena solo al publicar desde Editar, pero también puedes añadir entradas a mano:\n" +
   "//   { fecha: \"2026-11-16\", tipo: \"anuncio\", texto: \"Lo que quieras anunciar\" },\n" +
-  "// Tipos: nivel, eliminado, renombrado, puntos, dificultad, puesto, record, pack, anuncio.\n\n" +
+  "// Tipos: nivel, eliminado, renombrado, puntos, dificultad, puesto, pack, anuncio.\n\n" +
   "const CAMBIOS = " + JSON.stringify(cambios, null, 1) + ";\n";
 
 $("publicar").addEventListener("click", async () => {
