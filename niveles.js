@@ -831,7 +831,7 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "Teory of everything 2",
+    "nombre": "Theory of everything 2",
     "video": "https://www.youtube.com/watch?v=medoq_Znhaw&pp=ygUFdG9lIDI%3D",
     "id": "Robtop level",
     "creador": "Robtop",
@@ -931,7 +931,7 @@ const PACKS = [
     "puntos": 20,
     "niveles": [
       "clubstep",
-      "Teory of everything 2",
+      "Theory of everything 2",
       "Deadlocked"
     ]
   },
