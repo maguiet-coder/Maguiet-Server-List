@@ -6,6 +6,16 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-18",
+  "tipo": "puntos",
+  "texto": "Shine: 300 → 99 pts."
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "puesto",
+  "texto": "Shine: baja del puesto #41 al #43."
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "puesto",
   "texto": "Shine: sube del puesto #57 al #41."
  },
