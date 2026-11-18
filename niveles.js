@@ -606,6 +606,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Retro Circles ",
+    "video": "https://youtu.be/yVxKTQPzyus",
+    "id": "14000484",
+    "creador": "Nacho21",
+    "puntos": 75,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Weird",
     "video": "https://youtu.be/AJwI0ngeSto?si=roIVocLqKpcOGE-x",
     "id": "76564776",
@@ -829,19 +842,6 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
-      }
-    ]
-  },
-  {
-    "nombre": "Retro Circles ",
-    "video": "https://youtu.be/yVxKTQPzyus",
-    "id": "14000484",
-    "creador": "Nacho21",
-    "puntos": 70,
-    "dificultad": "Easy Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   }
