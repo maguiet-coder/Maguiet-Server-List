@@ -805,6 +805,19 @@ const NIVELES = [
         "jugador": "YtNeux"
       }
     ]
+  },
+  {
+    "nombre": "Blue Hell",
+    "video": "https://youtu.be/idRSi5G7ACg",
+    "id": "11317271",
+    "creador": "LaZye",
+    "puntos": 60,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman"
+      }
+    ]
   }
 ];
 
