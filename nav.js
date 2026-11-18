@@ -1,5 +1,5 @@
 // Código común a todas las páginas: menú lateral y utilidades.
-const SECCIONES = [["Inicio","index.html"],["Lista","lista.html"],["Leaderboard","leaderboard.html"],["Packs","packs.html"],["Cambios","cambios.html"],["Ruleta","ruleta.html"],["Normas","normas.html"],["Editar","editar.html"]];
+const SECCIONES = [["Inicio","index.html"],["Lista","lista.html"],["Leaderboard","leaderboard.html"],["Logros","logros.html"],["Packs","packs.html"],["Cambios","cambios.html"],["Ruleta","ruleta.html"],["Normas","normas.html"],["Editar","editar.html"]];
 
 function videoId(v) {
   const t = String(v || "").trim();
@@ -105,4 +105,27 @@ function copiar(texto, hecho) {
   f.className = "pie";
   f.textContent = "Maguiet Server List · La Lista Oficial del Servidor";
   document.body.appendChild(f);
+})();
+
+// Respaldo de la transición entre páginas: solo en navegadores que no la hacen por sí solos
+(function transicionRespaldo() {
+  if ("CSSViewTransitionRule" in window) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest("a[href]");
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if ((a.target && a.target !== "_self") || a.hasAttribute("download")) return;
+    const url = new URL(a.href, location.href);
+    if (url.protocol !== location.protocol || url.host !== location.host) return;   // enlaces a otras webs
+    if (url.pathname === location.pathname && url.search === location.search) return; // mismo sitio o solo "#"
+    e.preventDefault();
+    document.documentElement.classList.add("saliendo");
+    setTimeout(() => { location.href = a.href; }, 160);
+  });
+
+  // Al volver atrás desde la caché, la página no debe quedarse invisible
+  window.addEventListener("pageshow", (e) => {
+    if (e.persisted) document.documentElement.classList.remove("saliendo");
+  });
 })();

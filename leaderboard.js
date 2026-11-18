@@ -1,49 +1,24 @@
-// Clasificación general. Al pulsar un jugador se despliegan sus completions y sus packs.
+// Clasificación general. Al pulsar un jugador se despliegan sus completions, packs y logros.
 if (typeof NIVELES === "undefined" || !Array.isArray(NIVELES)) {
   const aviso = document.getElementById("list-empty");
   aviso.hidden = false;
   aviso.textContent = "No se han podido cargar los niveles. Revisa que niveles.js esté bien escrito (comas, comillas y llaves).";
   throw new Error("NIVELES no está definido");
 }
-const packsLista = typeof PACKS === "undefined" ? [] : PACKS;
-const pts = (n) => Number(n) || 0;
+if (typeof Jug === "undefined") {
+  const aviso = document.getElementById("list-empty");
+  aviso.hidden = false;
+  aviso.textContent = "Faltan archivos nuevos (jugadores.js y logros-datos.js). Copia todos los archivos de la web.";
+  throw new Error("Falta jugadores.js");
+}
+
+const pts = Jug.pts;
 const el = (tag, cls, txt) => {
   const e = document.createElement(tag);
   if (cls) e.className = cls;
   if (txt !== undefined) e.textContent = txt;
   return e;
 };
-
-function calcular() {
-  const mapa = new Map();
-
-  NIVELES.forEach((nivel, i) => (nivel.leaderboard || []).forEach((r) => {
-    const nombre = String(r.jugador || "").trim();
-    if (!nombre) return;
-    const clave = nombre.toLowerCase();
-    if (!mapa.has(clave)) mapa.set(clave, { nombre, puntos: 0, completions: [], packs: [] });
-    const j = mapa.get(clave);
-    if (j.completions.some((c) => c.nivel === nivel)) return;
-    j.completions.push({ nivel, puesto: i + 1, fecha: r.fecha || "" });
-    j.puntos += pts(nivel.puntos);
-  }));
-
-  mapa.forEach((j) => {
-    // Primero las completions que más puntos dan; la primera es la Hardest Completion
-    j.completions.sort((a, b) => pts(b.nivel.puntos) - pts(a.nivel.puntos) || a.puesto - b.puesto);
-    j.hardest = j.completions[0];
-    const hechos = j.completions.map((c) => c.nivel.nombre);
-    packsLista.forEach((p) => {
-      if (p.niveles.length && p.niveles.every((n) => hechos.includes(n))) {
-        j.packs.push(p);
-        j.puntos += pts(p.puntos);
-      }
-    });
-  });
-
-  return [...mapa.values()].sort((a, b) =>
-    b.puntos - a.puntos || b.completions.length - a.completions.length || a.nombre.localeCompare(b.nombre));
-}
 
 function panelDe(j, id) {
   const panel = el("div", "player-panel");
@@ -93,11 +68,28 @@ function panelDe(j, id) {
     s3.appendChild(lp);
   }
 
-  panel.append(s1, s3, s2);
+  // Logros conseguidos
+  const s4 = el("section", "logros-panel");
+  const logros = Jug.logrosDe(j);
+  s4.appendChild(el("h3", "panel-title", `Logros (${logros.length})`));
+  if (!logros.length) {
+    s4.appendChild(el("p", "hint", "Todavía no tiene logros."));
+  } else {
+    const fila = el("div", "chips-logros");
+    logros.forEach((l) => {
+      const chip = el("span", "logro-chip");
+      chip.title = l.desc;
+      chip.append(Jug.insignia(l), l.nombre);
+      fila.appendChild(chip);
+    });
+    s4.appendChild(fila);
+  }
+
+  panel.append(s1, s3, s2, s4);
   return panel;
 }
 
-const jugadores = calcular();
+const jugadores = Jug.calcular();
 const lista = document.getElementById("player-list");
 const vacio = document.getElementById("list-empty");
 vacio.hidden = jugadores.length > 0;
@@ -113,8 +105,12 @@ jugadores.forEach((j, i) => {
   fila.setAttribute("aria-expanded", "false");
   fila.setAttribute("aria-controls", `jugador-${i}`);
 
+  // Nombre con su mejor insignia de cada categoría (solo en esta leaderboard)
   const info = el("div", "card-info");
-  info.appendChild(el("span", "level-name", conCorona(j.nombre)));
+  const linea = el("div", "nombre-linea");
+  linea.appendChild(el("span", "level-name", conCorona(j.nombre)));
+  Jug.mejores(j).forEach((l) => linea.appendChild(Jug.insignia(l)));
+  info.appendChild(linea);
   const n = j.completions.length, m = j.packs.length;
   info.appendChild(el("span", "player-detail",
     `${n} ${n === 1 ? "nivel" : "niveles"} · ${m} ${m === 1 ? "pack" : "packs"} · Hardest: ${j.hardest.nivel.nombre}`));

@@ -1,8 +1,9 @@
-// Página Logros: guía de hitos y quién los ha conseguido. No hace falta tocarlo.
-if (typeof NIVELES === "undefined" || !Array.isArray(NIVELES) || typeof calcularJugadores !== "function") {
+// Página Logros: guía de hitos por temática. Al pulsar uno se ve su explicación y quién lo tiene.
+if (typeof NIVELES === "undefined" || !Array.isArray(NIVELES) || typeof Jug === "undefined" ||
+    typeof LOGROS === "undefined" || typeof CATEGORIAS === "undefined") {
   const aviso = document.getElementById("list-empty");
   aviso.hidden = false;
-  aviso.textContent = "No se han podido cargar los datos. Revisa que niveles.js y jugadores.js estén subidos y bien escritos.";
+  aviso.textContent = "No se han podido cargar los datos. Revisa que niveles.js, logros-datos.js y jugadores.js estén subidos y bien escritos.";
   throw new Error("Faltan datos para los logros");
 }
 
@@ -14,14 +15,14 @@ const el = (tag, cls, txt) => {
   return e;
 };
 
-const { lista, ctx } = calcularJugadores();
+const lista = Jug.calcular();
 const dialog = $("logro-dialog");
 
-function abrir(logro, tema, quienes) {
-  $("lg-emoji").textContent = logro.emoji;
-  $("lg-tema").textContent = tema.titulo;
+function abrir(logro, cat, total, quienes) {
+  $("lg-emoji").replaceChildren(Jug.insignia(logro, false));
+  $("lg-tema").textContent = `${cat.nombre} · escalón ${logro.nivel} de ${total}`;
   $("lg-nombre").textContent = logro.nombre;
-  $("lg-larga").textContent = logro.larga;
+  $("lg-larga").textContent = Jug.explicacion(logro);
   $("lg-titulo-quien").textContent = `Lo tienen (${quienes.length})`;
   const ul = $("lg-quien");
   ul.replaceChildren();
@@ -34,23 +35,26 @@ function abrir(logro, tema, quienes) {
   dialog.showModal();
 }
 
-TEMAS_LOGROS.forEach((tema) => {
-  const sec = el("section", "tema");
-  sec.appendChild(el("h2", "tema-titulo", tema.titulo));
-  if (tema.descripcion) sec.appendChild(el("p", "hint tema-desc", tema.descripcion));
+CATEGORIAS.forEach((cat) => {
+  const logros = LOGROS.filter((l) => l.categoria === cat.id).sort((a, b) => a.nivel - b.nivel);
+  if (!logros.length) return;
+  const sec = el("section", "logros-cat");
+  sec.appendChild(el("h2", "tema-titulo", cat.nombre));
+  sec.appendChild(el("p", "hint tema-desc", cat.desc));
   const grid = el("div", "logros-grid");
-  tema.logros.forEach((logro) => {
-    const quienes = lista.filter((j) => logro.cumple(j, ctx));
-    const b = el("button", "logro" + (quienes.length ? "" : " sin-nadie"));
-    b.type = "button";
-    b.append(
-      el("span", "logro-emoji", logro.emoji),
-      el("span", "logro-nombre", logro.nombre),
-      el("span", "logro-corta", logro.corta),
-      el("span", "logro-num", `👥 ${quienes.length}`)
+  logros.forEach((logro) => {
+    const quienes = Jug.quienTiene(logro, lista);
+    const tarjeta = el("button", "logro-card" + (quienes.length ? "" : " sin-nadie"));
+    tarjeta.type = "button";
+    const texto = el("span", "logro-texto");
+    texto.append(
+      el("strong", "", logro.nombre),
+      el("span", "", logro.desc),
+      el("small", "hint", `👥 ${quienes.length} ${quienes.length === 1 ? "jugador" : "jugadores"}`)
     );
-    b.addEventListener("click", () => abrir(logro, tema, quienes));
-    grid.appendChild(b);
+    tarjeta.append(Jug.insignia(logro, false), texto);
+    tarjeta.addEventListener("click", () => abrir(logro, cat, logros.length, quienes));
+    grid.appendChild(tarjeta);
   });
   sec.appendChild(grid);
   $("logros-lista").appendChild(sec);

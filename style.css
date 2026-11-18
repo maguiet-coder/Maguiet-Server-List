@@ -1171,11 +1171,12 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .hub-grid { grid-template-columns: repeat(6, 1fr); }
 .hub-grid .hub-btn { grid-column: span 2; }
-.hub-grid .hub-btn:nth-child(n+4) { grid-column: span 3; }
+/* Con 5 botones: tres arriba y dos abajo (más anchos). Con 6: tres y tres */
+.hub-grid .hub-btn:nth-child(4):nth-last-child(2), .hub-grid .hub-btn:nth-child(5):last-child { grid-column: span 3; }
 
 @media (max-width: 520px) {
   .hub-grid { grid-template-columns: 1fr; }
-  .hub-grid .hub-btn, .hub-grid .hub-btn:nth-child(n+4) { grid-column: auto; }
+  .hub-grid .hub-btn, .hub-grid .hub-btn:nth-child(4):nth-last-child(2), .hub-grid .hub-btn:nth-child(5):last-child { grid-column: auto; }
 }
 
 /* ---------- Cambios: recientes, antiguos y niveles nuevos resaltados ---------- */
@@ -1301,3 +1302,123 @@ body::before {
   .copy:active:not(:disabled), .primary:active:not(:disabled), .filtro:active:not(:disabled),
   .nav-btn:active, .close:active { transform: scale(0.97); }
 }
+
+/* ---------- Transición suave entre páginas ---------- */
+
+/* Los navegadores que lo soportan (Chrome, Edge, Safari) funden una página con la siguiente */
+@view-transition { navigation: auto; }
+
+@keyframes pagina-sale { to { opacity: 0; } }
+@keyframes pagina-entra { from { opacity: 0; transform: translateY(8px); } }
+
+::view-transition-old(root) { animation: pagina-sale 0.22s ease both; }
+::view-transition-new(root) { animation: pagina-entra 0.3s ease both; }
+
+/* El botón del menú se queda quieto mientras la página cambia */
+.nav-btn { view-transition-name: nav-btn; }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
+
+/* Respaldo para navegadores sin esa función: la página se desvanece antes de cambiar */
+html.saliendo body { opacity: 0; transition: opacity 0.16s ease; }
+
+/* ---------- Logros ---------- */
+
+.hub-grid .hub-btn:nth-child(6) { animation-delay: 0.3s; }
+
+.logro {
+  --anillo: #8a8a93;
+  --brillo: rgba(138, 138, 147, 0.3);
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 1.7em;
+  height: 1.7em;
+  border: 2px solid var(--anillo);
+  border-radius: 50%;
+  background: var(--deep);
+  box-shadow: 0 0 8px var(--brillo);
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: help;
+}
+
+.logro[data-tier="2"] { --anillo: #c58b5a; --brillo: rgba(197, 139, 90, 0.35); }
+.logro[data-tier="3"] { --anillo: #c9ced6; --brillo: rgba(201, 206, 214, 0.35); }
+.logro[data-tier="4"] { --anillo: #ffd166; --brillo: rgba(255, 209, 102, 0.4); }
+.logro[data-tier="5"] { --anillo: #ff8a2b; --brillo: rgba(255, 138, 43, 0.45); }
+.logro[data-tier="6"] { --anillo: #ff5a3c; --brillo: rgba(255, 90, 60, 0.5); }
+
+.nombre-linea { display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.55rem; }
+.nombre-linea .logro { font-size: 0.8rem; }
+
+.player-panel .logros-panel { grid-column: 1 / -1; }
+.chips-logros { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.logro-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.15rem 0.7rem 0.15rem 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.22);
+  font-size: 0.85rem;
+}
+
+.logro-chip .logro { font-size: 0.75rem; cursor: inherit; }
+
+.logros-cat { margin-bottom: 1.6rem; }
+.logros-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.7rem; }
+
+.logro-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.logro-card .logro { font-size: 1.5rem; cursor: default; }
+.logro-texto { display: grid; gap: 0.1rem; min-width: 0; }
+.logro-texto span { color: var(--muted); font-size: 0.9rem; }
+.logro-texto small { margin-top: 0.15rem; }
+.norma-clave a { color: var(--orange); }
+
+/* ---------- Página Logros: tarjetas en forma de botón y menú de detalle ---------- */
+
+.logros-aviso { margin: 0 0 1.4rem; }
+.tema-titulo { margin: 0; font-family: var(--font-display); font-size: 1.4rem; }
+.tema-desc { margin: 0.1rem 0 0.8rem; }
+
+.logro-card { position: relative; }
+
+button.logro-card {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s, background 0.15s;
+}
+
+button.logro-card:hover { border-color: var(--orange); background: var(--card-hover); }
+.logro-texto strong { font-family: var(--font-display); font-size: 1.05rem; line-height: 1.2; }
+.logro-card.sin-nadie .logro { filter: grayscale(0.7) opacity(0.75); }
+
+@media (hover: hover) and (pointer: fine) {
+  button.logro-card:hover { transform: translateY(-2px) scale(1.03); z-index: 2; }
+  button.logro-card:active { transform: scale(0.98); }
+}
+
+.logro-dialog { width: min(560px, calc(100vw - 1.5rem)); }
+.lg-cab { display: flex; align-items: center; gap: 1rem; margin: 0.3rem 2.5rem 0.8rem 0; }
+.lg-cab h2 { margin: 0; font-family: var(--font-display); font-size: clamp(1.4rem, 4vw, 1.9rem); line-height: 1.15; }
+.lg-cab .hint { margin: 0 0 0.1rem; }
+.lg-emoji .logro { font-size: 2.6rem; cursor: default; }
+.lg-larga { margin: 0 0 1rem; line-height: 1.6; }
