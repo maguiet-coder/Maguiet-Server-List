@@ -5,6 +5,11 @@
 
 const CAMBIOS = [
  {
+  "fecha": "2026-11-19",
+  "tipo": "puntos",
+  "texto": "Shine: 99 → 200 pts."
+ },
+ {
   "fecha": "2026-11-18",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Infinite Inversion (#4, 9320 pts, Extreme Demon)."
