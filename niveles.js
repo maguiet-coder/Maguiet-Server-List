@@ -5,32 +5,6 @@
 
 const NIVELES = [
   {
-    "nombre": "Aerial Gleam",
-    "video": "https://youtu.be/sHxwgT6wmfQ?si=vujya7lZaZUC1GIE",
-    "id": "82172844",
-    "creador": "NineDice",
-    "puntos": 1500,
-    "dificultad": "Extreme Demon",
-    "leaderboard": [
-      {
-        "jugador": "Gtgtr"
-      }
-    ]
-  },
-  {
-    "nombre": "Cobwebs ",
-    "video": "https://youtu.be/hDrB0vgXK9Q?si=-7kGj_D3FkBDA7lQ",
-    "id": "79771070",
-    "creador": "EndLevel",
-    "puntos": 2100,
-    "dificultad": "Extreme Demon",
-    "leaderboard": [
-      {
-        "jugador": "Gtgtr"
-      }
-    ]
-  },
-  {
     "nombre": "Ultimate MortalTerra",
     "video": "https://youtu.be/wmLmklrnO8I",
     "id": "140986997",
