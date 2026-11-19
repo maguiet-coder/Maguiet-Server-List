@@ -195,6 +195,15 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Deadlocked",
+    "video": "https://youtu.be/DXB4WXd8i-0?si=2GhOIyZcT9YFbfY8",
+    "id": "None",
+    "creador": "RobTop",
+    "puntos": 56,
+    "dificultad": "Easy Demon",
+    "leaderboard": []
+  },
+  {
     "nombre": "Theory of everything 2",
     "video": "https://youtu.be/1YI4oUUiV80?si=8xRYvK-7Bszzogsv",
     "id": "None",
