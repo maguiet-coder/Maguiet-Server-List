@@ -6,10 +6,10 @@
 const NIVELES = [
   {
     "nombre": "Areal Gleam",
-    "video": "https://youtu.be/hDrB0vgXK9Q?si=-7kGj_D3FkBDA7lQ",
-    "id": "79771070",
-    "creador": "EndLevel",
-    "puntos": 2100,
+    "video": "https://youtu.be/sgucsvWQ9bo?si=py70CmO6LMrK3KK5",
+    "id": "82172844",
+    "creador": "NineDice",
+    "puntos": 1500,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -18,11 +18,11 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "Cobwebs",
-    "video": "https://youtu.be/sgucsvWQ9bo?si=py70CmO6LMrK3KK5",
-    "id": "82172844",
-    "creador": "NineDice",
-    "puntos": 1500,
+    "nombre": "Cobwebs ",
+    "video": "https://youtu.be/hDrB0vgXK9Q?si=-7kGj_D3FkBDA7lQ",
+    "id": "79771070",
+    "creador": "EndLevel",
+    "puntos": 2100,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
