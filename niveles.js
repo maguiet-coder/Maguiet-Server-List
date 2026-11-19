@@ -673,6 +673,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "IS",
+    "video": "",
+    "id": "65765662",
+    "creador": "Grenate",
+    "puntos": 70,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aima89"
+      }
+    ]
+  },
+  {
     "nombre": "Deadlocked",
     "video": "https://youtu.be/Ez71k4pW3LM?si=g0GKHKJNPkxQptuU",
     "id": "Robtop Level",
@@ -934,15 +947,15 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "IS",
+    "nombre": "Speed of light ",
     "video": "",
-    "id": "65765662",
-    "creador": "Grenate",
-    "puntos": 70,
-    "dificultad": "Medium Demon",
+    "id": "",
+    "creador": "TheRealSalad",
+    "puntos": 60,
+    "dificultad": "Easy Demon",
     "leaderboard": [
       {
-        "jugador": "Aima89"
+        "jugador": "Aiman89"
       }
     ]
   }
