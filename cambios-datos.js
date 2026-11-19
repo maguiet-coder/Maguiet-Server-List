@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-18",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Infinite Inversion (#4, 9320 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "renombrado",
   "texto": "Nivel renombrado: Electrodinamix v2 → Electrodynamix v2."
  },
