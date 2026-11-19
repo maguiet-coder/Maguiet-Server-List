@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-19",
+  "tipo": "pack",
+  "texto": "Nuevo pack: RobTop Demons (+125 pts por completar Clubstep, Theory of everything 2, Deadlocked)."
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Deadlocked (#14, 56 pts, Easy Demon)."
  },
