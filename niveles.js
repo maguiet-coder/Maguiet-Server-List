@@ -6,7 +6,7 @@
 const NIVELES = [
   {
     "nombre": "Areal Gleam",
-    "video": "https://youtu.be/sgucsvWQ9bo?si=py70CmO6LMrK3KK5",
+    "video": "https://youtu.be/sHxwgT6wmfQ?si=vujya7lZaZUC1GIE",
     "id": "82172844",
     "creador": "NineDice",
     "puntos": 1500,
