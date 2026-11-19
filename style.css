@@ -428,22 +428,6 @@ main {
   .player-card .points { margin-left: 0; }
 }
 
-/* Pantallas anchas: el botón queda fijo en el margen izquierdo, fuera de la lista */
-@media (min-width: 1400px) {
-  .nav { position: fixed; top: 1.5rem; left: 1.5rem; z-index: 30; }
-  .nav-menu { left: 0; right: auto; }
-}
-
-/* Pantallas más estrechas: el botón va arriba y el menú empuja la lista hacia abajo */
-@media (max-width: 1399px) {
-  .nav-menu {
-    position: static;
-    width: 220px;
-    margin-top: 0.5rem;
-    box-shadow: none;
-  }
-}
-
 /* ---------- Menú lateral ---------- */
 
 .nav-btn {
@@ -620,8 +604,6 @@ main {
 .ed-list { display: grid; gap: 1rem; margin-bottom: 1rem; }
 .ed-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
 .ed-acc, .acciones { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
-.steps { margin: 0.6rem 0 0; padding-left: 1.3rem; color: var(--muted); }
-.steps strong { color: var(--text); }
 
 .primary {
   justify-self: start;
@@ -1422,3 +1404,23 @@ button.logro-card:hover { border-color: var(--orange); background: var(--card-ho
 .lg-cab .hint { margin: 0 0 0.1rem; }
 .lg-emoji .logro { font-size: 2.6rem; cursor: default; }
 .lg-larga { margin: 0 0 1rem; line-height: 1.6; }
+
+/* ---------- Logros junto al nombre: 3 visibles y "+X" ---------- */
+
+.insignias { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; }
+
+.insignias-mas {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.insignias-mas:hover { border-color: var(--orange); color: var(--orange); }

@@ -13,6 +13,7 @@ if (typeof Jug === "undefined") {
 }
 
 const pts = Jug.pts;
+const MAX_VISIBLES = 3; // logros que se ven junto al nombre; el resto va en "+X"
 const el = (tag, cls, txt) => {
   const e = document.createElement(tag);
   if (cls) e.className = cls;
@@ -70,7 +71,7 @@ function panelDe(j, id) {
 
   // Logros conseguidos
   const s4 = el("section", "logros-panel");
-  const logros = Jug.logrosDe(j);
+  const logros = Jug.porImportancia(j);
   s4.appendChild(el("h3", "panel-title", `Logros (${logros.length})`));
   if (!logros.length) {
     s4.appendChild(el("p", "hint", "Todavía no tiene logros."));
@@ -100,7 +101,7 @@ jugadores.forEach((j, i) => {
   if (i > 0 && j.puntos < jugadores[i - 1].puntos) puesto = i + 1; // empates comparten puesto
 
   const li = el("li");
-  const fila = el("button", "level-card player-card" + (puesto === 1 ? " top1" : ""));
+  const fila = el("button", "level-card player-card");
   fila.type = "button";
   fila.setAttribute("aria-expanded", "false");
   fila.setAttribute("aria-controls", `jugador-${i}`);
@@ -109,7 +110,23 @@ jugadores.forEach((j, i) => {
   const info = el("div", "card-info");
   const linea = el("div", "nombre-linea");
   linea.appendChild(el("span", "level-name", conCorona(j.nombre)));
-  Jug.mejores(j).forEach((l) => linea.appendChild(Jug.insignia(l)));
+  const ganados = Jug.porImportancia(j);
+  if (ganados.length) {
+    const caja = el("span", "insignias");
+    let todos = false;
+    const pintarInsignias = () => {
+      caja.replaceChildren();
+      (todos ? ganados : ganados.slice(0, MAX_VISIBLES)).forEach((l) => caja.appendChild(Jug.insignia(l)));
+      if (ganados.length > MAX_VISIBLES) {
+        const mas = el("span", "insignias-mas", todos ? "−" : "+" + (ganados.length - MAX_VISIBLES));
+        mas.title = todos ? "Ver menos" : "Ver todos los logros";
+        mas.addEventListener("click", (e) => { e.stopPropagation(); todos = !todos; pintarInsignias(); });
+        caja.appendChild(mas);
+      }
+    };
+    pintarInsignias();
+    linea.appendChild(caja);
+  }
   info.appendChild(linea);
   const n = j.completions.length, m = j.packs.length;
   info.appendChild(el("span", "player-detail",
