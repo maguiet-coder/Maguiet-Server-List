@@ -6,6 +6,16 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Areal Gleam (#1, 2100 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Cobwebs (#2, 1500 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "puntos",
   "texto": "iSpyWithMyLittleEye: 0 → 67 pts."
  },
