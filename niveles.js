@@ -74,9 +74,104 @@ const NIVELES = [
     "video": "https://youtu.be/Ow7nDnZTbDw?si=sZwpqKisu6eFdejC",
     "id": "89886591",
     "creador": "Voxicat",
-    "puntos": 0,
-    "dificultad": "Hard Demon",
-    "leaderboard": []
+    "puntos": 67,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Blue Hell",
+    "video": "https://youtu.be/UX-PzYOaNjc?si=39HQ3JlXRHlm2nzb",
+    "id": "11317271",
+    "creador": "LaZye",
+    "puntos": 65,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Platinum Adventure",
+    "video": "https://youtu.be/DWGGjNnU5CA?si=hM0CAOyWZdleN9ew",
+    "id": "5904109",
+    "creador": "Jerry4",
+    "puntos": 62,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Retro Circles",
+    "video": "https://youtu.be/yVxKTQPzyus?si=2oU6gtG1Gr-jVpvqhttps://youtu.be/yVxKTQPzyus?si=2oU6gtG1Gr-jVpvq",
+    "id": "14000484",
+    "creador": "Nacho21",
+    "puntos": 60,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "The Lightning Road",
+    "video": "https://youtu.be/smwunc7UiHk?si=fNBK7wVMjimQ7RV8",
+    "id": "55520",
+    "creador": "Timeless Real",
+    "puntos": 58,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "The Nightmare",
+    "video": "https://youtu.be/i0dlZgqA8ds?si=zPd3FERdKPVGcLMO",
+    "id": "13519",
+    "creador": "Jax",
+    "puntos": 57,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Theory of everything 2",
+    "video": "https://youtu.be/1YI4oUUiV80?si=8xRYvK-7Bszzogsv",
+    "id": "None",
+    "creador": "RobTop",
+    "puntos": 55,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Clubstep",
+    "video": "https://youtu.be/VInQkeec188?si=LHSS5O8zU0z81KHY",
+    "id": "None",
+    "creador": "RobTop",
+    "puntos": 54,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
   }
 ];
 
