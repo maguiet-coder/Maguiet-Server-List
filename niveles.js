@@ -27,6 +27,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -53,6 +56,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -66,6 +72,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -79,6 +88,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -105,6 +117,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -131,6 +146,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -144,6 +162,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -157,6 +178,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -170,6 +194,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   }
