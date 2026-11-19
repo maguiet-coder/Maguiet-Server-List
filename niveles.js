@@ -598,7 +598,7 @@ const NIVELES = [
     "video": "https://youtu.be/IPaNsFXHMb0",
     "id": "60473779",
     "creador": "Ballons",
-    "puntos": 99,
+    "puntos": 200,
     "dificultad": "Medium Demon",
     "leaderboard": [
       {
