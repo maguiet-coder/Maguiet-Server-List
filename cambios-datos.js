@@ -6,6 +6,51 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-19",
+  "tipo": "puntos",
+  "texto": "iSpyWithMyLittleEye: 0 → 67 pts."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "dificultad",
+  "texto": "iSpyWithMyLittleEye: dificultad Hard Demon → Easy Demon."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Blue Hell (#7, 65 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Platinum Adventure (#8, 62 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Retro Circles (#9, 60 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: The Lightning Road (#10, 58 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: The Nightmare (#11, 57 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Theory of everything 2 (#12, 55 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Clubstep (#13, 54 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "nivel",
   "texto": "Nuevo nivel: B (#2, 145 pts, Medium Demon)."
  },
