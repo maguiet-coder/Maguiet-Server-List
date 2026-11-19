@@ -6,6 +6,16 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-19",
+  "tipo": "eliminado",
+  "texto": "Nivel eliminado: Aerial Gleam."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "eliminado",
+  "texto": "Nivel eliminado: Cobwebs ."
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "renombrado",
   "texto": "Nivel renombrado: Areal Gleam → Aerial Gleam."
  },
