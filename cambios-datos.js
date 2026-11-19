@@ -5,6 +5,11 @@
 
 const CAMBIOS = [
  {
+  "fecha": "2026-11-20",
+  "tipo": "puntos",
+  "texto": "Sakupen Hell: 9030 → 8580 pts."
+ },
+ {
   "fecha": "2026-11-19",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Sakupen Hell (#1, 9030 pts, Extreme Demon)."
