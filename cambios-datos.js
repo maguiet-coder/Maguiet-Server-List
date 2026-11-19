@@ -7,6 +7,11 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-19",
   "tipo": "nivel",
+  "texto": "Nuevo nivel: Sakupen Hell (#1, 9030 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
   "texto": "Nuevo nivel: Impulse (#5, 73 pts, Easy Demon)."
  },
  {
