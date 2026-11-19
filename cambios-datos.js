@@ -6,6 +6,16 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-19",
+  "tipo": "renombrado",
+  "texto": "Nivel renombrado: Cobwebs → Areal Gleam."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "renombrado",
+  "texto": "Nivel renombrado: Areal Gleam → Cobwebs ."
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "pack",
   "texto": "Nuevo pack: RobTop Demons (+125 pts por completar Clubstep, Theory of everything 2, Deadlocked)."
  },
