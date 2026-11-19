@@ -5,6 +5,19 @@
 
 const NIVELES = [
   {
+    "nombre": "Sakupen Hell",
+    "video": "https://youtu.be/8kNzhz97mdA",
+    "id": "23262780",
+    "creador": "Trusta",
+    "puntos": 9030,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "zZenyth"
+      }
+    ]
+  },
+  {
     "nombre": "Ultimate MortalTerra",
     "video": "https://youtu.be/wmLmklrnO8I",
     "id": "140986997",
