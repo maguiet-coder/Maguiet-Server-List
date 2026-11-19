@@ -6,6 +6,16 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-19",
+  "tipo": "puesto",
+  "texto": "IS: sube del puesto #60 al #48."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Speed of light  (#61, 60 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "nivel",
   "texto": "Nuevo nivel: IS (#60, 70 pts, Medium Demon)."
  },
