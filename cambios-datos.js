@@ -7,6 +7,11 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-19",
   "tipo": "nivel",
+  "texto": "Nuevo nivel: Deadlocked (#14, 56 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
   "texto": "Nuevo nivel: Areal Gleam (#1, 2100 pts, Extreme Demon)."
  },
  {
