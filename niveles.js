@@ -44,6 +44,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Infinite Inversion",
+    "video": "https://youtu.be/6gvP5zfElrs",
+    "id": "102807047",
+    "creador": "Filqh",
+    "puntos": 9320,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]. 18/11/2026"
+      }
+    ]
+  },
+  {
     "nombre": "Tenth Circle",
     "video": "https://youtu.be/sH78nDOyYyE?si=hIeVMuxaRA4Ec4E4",
     "id": "62592746",
@@ -594,6 +607,22 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Retro Circles ",
+    "video": "https://youtu.be/yVxKTQPzyus",
+    "id": "14000484",
+    "creador": "Nacho21",
+    "puntos": 75,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Bioluminescence",
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
@@ -615,19 +644,6 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
-      }
-    ]
-  },
-  {
-    "nombre": "Retro Circles ",
-    "video": "https://youtu.be/yVxKTQPzyus",
-    "id": "14000484",
-    "creador": "Nacho21",
-    "puntos": 75,
-    "dificultad": "Easy Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   },
@@ -666,6 +682,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -723,6 +742,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -814,6 +836,9 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
@@ -827,6 +852,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
