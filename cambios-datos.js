@@ -6,6 +6,31 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Impulse (#5, 73 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: iS (#7, 69 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Demon Mixed (#10, 64 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Xstep v2 (#12, 61 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Speed of Light (#14, 59 pts, Easy Demon)."
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "eliminado",
   "texto": "Nivel eliminado: Aerial Gleam."
  },
