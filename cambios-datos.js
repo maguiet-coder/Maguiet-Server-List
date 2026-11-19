@@ -7,6 +7,11 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-19",
   "tipo": "puesto",
+  "texto": "Speed of light : sube del puesto #61 al #57."
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "puesto",
   "texto": "IS: sube del puesto #60 al #48."
  },
  {
