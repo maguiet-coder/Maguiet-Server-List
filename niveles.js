@@ -66,6 +66,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Impulse",
+    "video": "https://www.youtube.com/watch?v=hMzQIllaUjI",
+    "id": "393159",
+    "creador": "MrCheeseTigrr",
+    "puntos": 73,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Shiver",
     "video": "https://youtu.be/TRcvzgpTMO8?si=cjeIVIpm3SEUruJx",
     "id": "56210242",
@@ -78,6 +91,19 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
+    "nombre": "iS",
+    "video": "https://www.youtube.com/watch?v=PF1n77uwi7g",
+    "id": "65765662",
+    "creador": "Grenate",
+    "puntos": 69,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
@@ -111,6 +137,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Demon Mixed",
+    "video": "https://www.youtube.com/watch?v=DnuDa_tktnY",
+    "id": "566659",
+    "creador": "RealOggY",
+    "puntos": 64,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Platinum Adventure",
     "video": "https://youtu.be/DWGGjNnU5CA?si=hM0CAOyWZdleN9ew",
     "id": "5904109",
@@ -127,11 +166,37 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Xstep v2",
+    "video": "https://www.youtube.com/watch?v=j9Q0pTULhF8",
+    "id": "341613",
+    "creador": "IIINePtunEIII",
+    "puntos": 61,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Retro Circles",
     "video": "https://youtu.be/yVxKTQPzyus?si=2oU6gtG1Gr-jVpvqhttps://youtu.be/yVxKTQPzyus?si=2oU6gtG1Gr-jVpvq",
     "id": "14000484",
     "creador": "Nacho21",
     "puntos": 60,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
+    "nombre": "Speed of Light",
+    "video": "https://www.youtube.com/watch?v=bQPG5-aCVw0",
+    "id": "5098465",
+    "creador": "TheRealSalad",
+    "puntos": 59,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
