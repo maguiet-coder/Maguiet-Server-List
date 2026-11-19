@@ -932,6 +932,19 @@ const NIVELES = [
         "jugador": "Maguiet"
       }
     ]
+  },
+  {
+    "nombre": "IS",
+    "video": "",
+    "id": "65765662",
+    "creador": "Grenate",
+    "puntos": 70,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aima89"
+      }
+    ]
   }
 ];
 
