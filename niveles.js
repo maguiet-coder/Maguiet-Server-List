@@ -9,7 +9,7 @@ const NIVELES = [
     "video": "https://youtu.be/8kNzhz97mdA",
     "id": "23262780",
     "creador": "Trusta",
-    "puntos": 9030,
+    "puntos": 8580,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
