@@ -856,6 +856,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Speed of light ",
+    "video": "https://youtu.be/JTTKvJustyQ",
+    "id": "5098465",
+    "creador": "TheRealSalad",
+    "puntos": 60,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Blue Hell",
     "video": "https://youtu.be/idRSi5G7ACg",
     "id": "11317271",
@@ -943,19 +956,6 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
-      }
-    ]
-  },
-  {
-    "nombre": "Speed of light ",
-    "video": "https://youtu.be/JTTKvJustyQ",
-    "id": "5098465",
-    "creador": "TheRealSalad",
-    "puntos": 60,
-    "dificultad": "Easy Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   }
