@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-20",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Sakupen Egg (#21, 160 pts, Medium Demon)."
+ },
+ {
+  "fecha": "2026-11-20",
   "tipo": "puntos",
   "texto": "Ultimate MortalTerra: 200 → 210 pts."
  },
