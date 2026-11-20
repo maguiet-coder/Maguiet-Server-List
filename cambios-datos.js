@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-20",
+  "tipo": "puesto",
+  "texto": "Sakupen Egg: sube del puesto #21 al #3."
+ },
+ {
+  "fecha": "2026-11-20",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Sakupen Egg (#21, 160 pts, Medium Demon)."
  },
