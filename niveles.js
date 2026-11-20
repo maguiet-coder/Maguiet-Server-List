@@ -31,6 +31,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Sakupen Egg",
+    "video": "https://youtu.be/JiA1atKYuSU?is=bGhj-eqXHcmzlAhk",
+    "id": "58002670",
+    "creador": "Sivlol",
+    "puntos": 160,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "B",
     "video": "https://youtu.be/ohKPqGxotao?si=576g5WnJ3NzL4S6q",
     "id": "34085027",
@@ -321,19 +334,6 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
-      }
-    ]
-  },
-  {
-    "nombre": "Sakupen Egg",
-    "video": "https://youtu.be/JiA1atKYuSU?is=bGhj-eqXHcmzlAhk",
-    "id": "58002670",
-    "creador": "Sivlol",
-    "puntos": 160,
-    "dificultad": "Medium Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   }
