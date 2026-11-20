@@ -117,6 +117,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -133,6 +136,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -175,6 +181,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -188,6 +197,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -230,6 +242,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -246,6 +261,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -262,6 +280,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -278,6 +299,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   },
@@ -294,6 +318,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Maguiet"
       }
     ]
   }
@@ -302,20 +329,31 @@ const NIVELES = [
 // PACKS: quien completa TODOS los niveles de un pack gana sus puntos extra.
 const PACKS = [
   {
-    "nombre": "Pack Maguiet",
-    "puntos": 50,
+    "nombre": "Maguiet Pack",
+    "puntos": 60,
     "niveles": [
       "Ultimate MortalTerra",
       "Bioluminescence"
     ]
   },
   {
-    "nombre": "RobTop Demons",
+    "nombre": "RobTop Pack",
     "puntos": 125,
     "niveles": [
       "Clubstep",
       "Theory of everything 2",
       "Deadlocked"
+    ]
+  },
+  {
+    "nombre": "Beginner Pack",
+    "puntos": 75,
+    "niveles": [
+      "The Nightmare",
+      "The Lightning Road",
+      "Platinum Adventure",
+      "iSpyWithMyLittleEye",
+      "iS"
     ]
   }
 ];
