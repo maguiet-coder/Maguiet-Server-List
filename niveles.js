@@ -22,7 +22,7 @@ const NIVELES = [
     "video": "https://youtu.be/wmLmklrnO8I",
     "id": "140986997",
     "creador": "Maguiet",
-    "puntos": 200,
+    "puntos": 210,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -330,7 +330,7 @@ const NIVELES = [
 const PACKS = [
   {
     "nombre": "Maguiet Pack",
-    "puntos": 60,
+    "puntos": 100,
     "niveles": [
       "Ultimate MortalTerra",
       "Bioluminescence"
@@ -338,7 +338,7 @@ const PACKS = [
   },
   {
     "nombre": "RobTop Pack",
-    "puntos": 125,
+    "puntos": 75,
     "niveles": [
       "Clubstep",
       "Theory of everything 2",
@@ -347,7 +347,7 @@ const PACKS = [
   },
   {
     "nombre": "Beginner Pack",
-    "puntos": 75,
+    "puntos": 125,
     "niveles": [
       "The Nightmare",
       "The Lightning Road",
