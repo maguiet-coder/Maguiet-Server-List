@@ -6,6 +6,26 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-20",
+  "tipo": "pack",
+  "texto": "Pack renombrado: Pack Maguiet → Maguiet Pack."
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "pack",
+  "texto": "Maguiet Pack: bonus 50 → 60 pts."
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "pack",
+  "texto": "Pack renombrado: RobTop Demons → RobTop Pack."
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "pack",
+  "texto": "Nuevo pack: Beginner Pack (+75 pts por completar The Nightmare, The Lightning Road, Platinum Adventure, iSpyWithMyLittleEye, iS)."
+ },
+ {
+  "fecha": "2026-11-20",
   "tipo": "puntos",
   "texto": "Sakupen Hell: 9030 → 8580 pts."
  },
