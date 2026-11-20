@@ -323,6 +323,19 @@ const NIVELES = [
         "jugador": "Maguiet"
       }
     ]
+  },
+  {
+    "nombre": "Sakupen Egg",
+    "video": "https://youtu.be/JiA1atKYuSU?is=bGhj-eqXHcmzlAhk",
+    "id": "58002670",
+    "creador": "Sivlol",
+    "puntos": 160,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
   }
 ];
 
