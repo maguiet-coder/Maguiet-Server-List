@@ -6,6 +6,26 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-20",
+  "tipo": "puntos",
+  "texto": "Ultimate MortalTerra: 200 → 210 pts."
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "pack",
+  "texto": "Maguiet Pack: bonus 60 → 100 pts."
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "pack",
+  "texto": "RobTop Pack: bonus 125 → 75 pts."
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "pack",
+  "texto": "Beginner Pack: bonus 75 → 125 pts."
+ },
+ {
+  "fecha": "2026-11-20",
   "tipo": "pack",
   "texto": "Pack renombrado: Pack Maguiet → Maguiet Pack."
  },
