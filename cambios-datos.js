@@ -5,6 +5,26 @@
 
 const CAMBIOS = [
  {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Sakupen Hell: 8580 → 3532 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Bloodbath (#2, 3240 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Acu (#3, 232 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puesto",
+  "texto": "Xstep v2: baja del puesto #14 al #14."
+ },
+ {
   "fecha": "2026-11-20",
   "tipo": "puesto",
   "texto": "Sakupen Egg: sube del puesto #21 al #3."
