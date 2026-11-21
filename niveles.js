@@ -9,7 +9,33 @@ const NIVELES = [
     "video": "https://youtu.be/8kNzhz97mdA",
     "id": "23262780",
     "creador": "Trusta",
-    "puntos": 8580,
+    "puntos": 3532,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "zZenyth"
+      }
+    ]
+  },
+  {
+    "nombre": "Bloodbath",
+    "video": "https://youtu.be/5UUFOB2CZfc",
+    "id": "10565740",
+    "creador": "Riot",
+    "puntos": 3240,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "zZenyth"
+      }
+    ]
+  },
+  {
+    "nombre": "Acu",
+    "video": "https://youtu.be/cb0pGNFLa-g",
+    "id": "61079355",
+    "creador": "neigefeu",
+    "puntos": 232,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -172,6 +198,22 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Xstep v2",
+    "video": "https://www.youtube.com/watch?v=j9Q0pTULhF8",
+    "id": "341613",
+    "creador": "IIINePtunEIII",
+    "puntos": 61,
+    "dificultad": "Easy Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      },
+      {
+        "jugador": "Maguiet"
+      }
+    ]
+  },
+  {
     "nombre": "Demon Mixed",
     "video": "https://www.youtube.com/watch?v=DnuDa_tktnY",
     "id": "566659",
@@ -197,22 +239,6 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
-      },
-      {
-        "jugador": "Maguiet"
-      }
-    ]
-  },
-  {
-    "nombre": "Xstep v2",
-    "video": "https://www.youtube.com/watch?v=j9Q0pTULhF8",
-    "id": "341613",
-    "creador": "IIINePtunEIII",
-    "puntos": 61,
-    "dificultad": "Easy Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       },
       {
         "jugador": "Maguiet"
