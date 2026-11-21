@@ -5,6 +5,19 @@
 
 const NIVELES = [
   {
+    "nombre": "Auditory Breaker",
+    "video": "https://www.youtube.com/watch?v=McaXulAUAek",
+    "id": "51791710",
+    "creador": "LazerBlitz",
+    "puntos": 4084,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Sakupen Hell",
     "video": "https://youtu.be/8kNzhz97mdA",
     "id": "23262780",
@@ -18,6 +31,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Astrophobia",
+    "video": "https://www.youtube.com/watch?v=Fe7mlL-F8Oo",
+    "id": "94772024",
+    "creador": "Jakalope",
+    "puntos": 3348,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Bloodbath",
     "video": "https://youtu.be/5UUFOB2CZfc",
     "id": "10565740",
@@ -27,6 +53,35 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "zZenyth"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Cat Planet",
+    "video": "https://www.youtube.com/watch?v=9UiQlAFdfVU",
+    "id": "84766628",
+    "creador": "icedcave",
+    "puntos": 2548,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Azurite (Sillow)",
+    "video": "https://www.youtube.com/watch?v=zO7DhN8sp2g",
+    "id": "62214792",
+    "creador": "Sillow",
+    "puntos": 468,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
