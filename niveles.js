@@ -66,6 +66,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -95,6 +98,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -165,6 +171,9 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -213,6 +222,9 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -226,6 +238,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -271,6 +286,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
