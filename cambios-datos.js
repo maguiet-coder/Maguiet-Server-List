@@ -6,6 +6,26 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-21",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Auditory Breaker (#1, 4084 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Astrophobia (#3, 3348 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Cat Planet (#5, 2548 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Azurite (Sillow) (#6, 468 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-21",
   "tipo": "puntos",
   "texto": "Ultimate MortalTerra: 210 → 110 pts."
  },
