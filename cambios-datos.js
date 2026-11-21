@@ -7,6 +7,106 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-21",
   "tipo": "puntos",
+  "texto": "Ultimate MortalTerra: 210 → 110 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Sakupen Egg: 160 → 60 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "B: 145 → 55 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Electrodynamix v2: 140 → 50 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Bioluminescence: 75 → 49 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Impulse: 73 → 47 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Shiver: 70 → 45 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "iS: 69 → 43 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "iSpyWithMyLittleEye: 67 → 40 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Blue Hell: 65 → 37 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Xstep v2: 61 → 35 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Demon Mixed: 64 → 33 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Platinum Adventure: 62 → 30 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Retro Circles: 60 → 27 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Speed of Light: 59 → 25 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "The Lightning Road: 58 → 23 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "The Nightmare: 57 → 20 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Deadlocked: 56 → 17 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Theory of everything 2: 55 → 15 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
+  "texto": "Clubstep: 54 → 10 pts."
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "puntos",
   "texto": "Sakupen Hell: 8580 → 3532 pts."
  },
  {
