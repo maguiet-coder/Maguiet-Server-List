@@ -48,7 +48,7 @@ const NIVELES = [
     "video": "https://youtu.be/wmLmklrnO8I",
     "id": "140986997",
     "creador": "Maguiet",
-    "puntos": 210,
+    "puntos": 110,
     "dificultad": "Hard Demon",
     "leaderboard": [
       {
@@ -61,7 +61,7 @@ const NIVELES = [
     "video": "https://youtu.be/JiA1atKYuSU?is=bGhj-eqXHcmzlAhk",
     "id": "58002670",
     "creador": "Sivlol",
-    "puntos": 160,
+    "puntos": 60,
     "dificultad": "Medium Demon",
     "leaderboard": [
       {
@@ -74,7 +74,7 @@ const NIVELES = [
     "video": "https://youtu.be/ohKPqGxotao?si=576g5WnJ3NzL4S6q",
     "id": "34085027",
     "creador": "Motleyorc",
-    "puntos": 145,
+    "puntos": 55,
     "dificultad": "Medium Demon",
     "leaderboard": [
       {
@@ -90,7 +90,7 @@ const NIVELES = [
     "video": "https://youtu.be/LO6_3xeI-BA?si=IbKX_WU3KRiYcDFZ",
     "id": "839175",
     "creador": "iiiNePtunEiii",
-    "puntos": 140,
+    "puntos": 50,
     "dificultad": "Medium Demon",
     "leaderboard": [
       {
@@ -103,7 +103,7 @@ const NIVELES = [
     "video": "https://youtu.be/eJvjpBpXw24?si=9V345hB54KLjSf2t",
     "id": "152397804",
     "creador": "Maguiet",
-    "puntos": 75,
+    "puntos": 49,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -125,7 +125,7 @@ const NIVELES = [
     "video": "https://www.youtube.com/watch?v=hMzQIllaUjI",
     "id": "393159",
     "creador": "MrCheeseTigrr",
-    "puntos": 73,
+    "puntos": 47,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -138,7 +138,7 @@ const NIVELES = [
     "video": "https://youtu.be/TRcvzgpTMO8?si=cjeIVIpm3SEUruJx",
     "id": "56210242",
     "creador": "SpKale",
-    "puntos": 70,
+    "puntos": 45,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -154,7 +154,7 @@ const NIVELES = [
     "video": "https://www.youtube.com/watch?v=PF1n77uwi7g",
     "id": "65765662",
     "creador": "Grenate",
-    "puntos": 69,
+    "puntos": 43,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -170,7 +170,7 @@ const NIVELES = [
     "video": "https://youtu.be/Ow7nDnZTbDw?si=sZwpqKisu6eFdejC",
     "id": "89886591",
     "creador": "Voxicat",
-    "puntos": 67,
+    "puntos": 40,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -189,7 +189,7 @@ const NIVELES = [
     "video": "https://youtu.be/UX-PzYOaNjc?si=39HQ3JlXRHlm2nzb",
     "id": "11317271",
     "creador": "LaZye",
-    "puntos": 65,
+    "puntos": 37,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -202,7 +202,7 @@ const NIVELES = [
     "video": "https://www.youtube.com/watch?v=j9Q0pTULhF8",
     "id": "341613",
     "creador": "IIINePtunEIII",
-    "puntos": 61,
+    "puntos": 35,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -218,7 +218,7 @@ const NIVELES = [
     "video": "https://www.youtube.com/watch?v=DnuDa_tktnY",
     "id": "566659",
     "creador": "RealOggY",
-    "puntos": 64,
+    "puntos": 33,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -231,7 +231,7 @@ const NIVELES = [
     "video": "https://youtu.be/DWGGjNnU5CA?si=hM0CAOyWZdleN9ew",
     "id": "5904109",
     "creador": "Jerry4",
-    "puntos": 62,
+    "puntos": 30,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -250,7 +250,7 @@ const NIVELES = [
     "video": "https://youtu.be/yVxKTQPzyus?si=2oU6gtG1Gr-jVpvqhttps://youtu.be/yVxKTQPzyus?si=2oU6gtG1Gr-jVpvq",
     "id": "14000484",
     "creador": "Nacho21",
-    "puntos": 60,
+    "puntos": 27,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -263,7 +263,7 @@ const NIVELES = [
     "video": "https://www.youtube.com/watch?v=bQPG5-aCVw0",
     "id": "5098465",
     "creador": "TheRealSalad",
-    "puntos": 59,
+    "puntos": 25,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -276,7 +276,7 @@ const NIVELES = [
     "video": "https://youtu.be/smwunc7UiHk?si=fNBK7wVMjimQ7RV8",
     "id": "55520",
     "creador": "Timeless Real",
-    "puntos": 58,
+    "puntos": 23,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -295,7 +295,7 @@ const NIVELES = [
     "video": "https://youtu.be/i0dlZgqA8ds?si=zPd3FERdKPVGcLMO",
     "id": "13519",
     "creador": "Jax",
-    "puntos": 57,
+    "puntos": 20,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -314,7 +314,7 @@ const NIVELES = [
     "video": "https://youtu.be/DXB4WXd8i-0?si=2GhOIyZcT9YFbfY8",
     "id": "None",
     "creador": "RobTop",
-    "puntos": 56,
+    "puntos": 17,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -333,7 +333,7 @@ const NIVELES = [
     "video": "https://youtu.be/1YI4oUUiV80?si=8xRYvK-7Bszzogsv",
     "id": "None",
     "creador": "RobTop",
-    "puntos": 55,
+    "puntos": 15,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
@@ -352,7 +352,7 @@ const NIVELES = [
     "video": "https://youtu.be/VInQkeec188?si=LHSS5O8zU0z81KHY",
     "id": "None",
     "creador": "RobTop",
-    "puntos": 54,
+    "puntos": 10,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
