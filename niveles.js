@@ -88,6 +88,9 @@ const NIVELES = [
       },
       {
         "jugador": "YtNeux"
+      },
+      {
+        "jugador": "Rip_IanOficial"
       }
     ]
   },
