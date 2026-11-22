@@ -60,11 +60,235 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "aftermath",
+    "video": "https://www.youtube.com/watch?v=4uhghY1yg-g",
+    "id": "25610878",
+    "creador": "Exenity",
+    "puntos": 2600,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Cat Planet",
     "video": "https://www.youtube.com/watch?v=9UiQlAFdfVU",
     "id": "84766628",
     "creador": "icedcave",
     "puntos": 2548,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "sunburn",
+    "video": "https://www.youtube.com/watch?v=TU3Clawj02s",
+    "id": "73005068",
+    "creador": "pocke",
+    "puntos": 1988,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Convulsing Light",
+    "video": "https://www.youtube.com/watch?v=LhvLMmFB16I",
+    "id": "132904827",
+    "creador": "Yerylik",
+    "puntos": 1924,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "cerebral hemorrhage",
+    "video": "https://www.youtube.com/watch?v=y2Z1m808O2Q",
+    "id": "88853479",
+    "creador": "NateFH",
+    "puntos": 1848,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "In Circles",
+    "video": "https://www.youtube.com/watch?v=os8v7iqaoXQ",
+    "id": "119133802",
+    "creador": "SomieStuff",
+    "puntos": 1716,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Broken Signal",
+    "video": "https://www.youtube.com/watch?v=ON1oDz0wTfc",
+    "id": "69108628",
+    "creador": "Grax",
+    "puntos": 1588,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "conastinopla"
+      },
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Our Fountain",
+    "video": "https://www.youtube.com/watch?v=V9DPv9VlY_0",
+    "id": "58023558",
+    "creador": "LP44",
+    "puntos": 1516,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Project alter",
+    "video": "https://www.youtube.com/watch?v=U9nKJulKcmc",
+    "id": "107641215",
+    "creador": "soumpeixe",
+    "puntos": 1324,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Crowd Control",
+    "video": "https://www.youtube.com/watch?v=RhGxX3jGQDI",
+    "id": "69491632",
+    "creador": "Deadlox",
+    "puntos": 1300,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "TROLLMACHINE",
+    "video": "https://www.youtube.com/watch?v=mU6nDt7juac",
+    "id": "84325817",
+    "creador": "TROLLM4CHINE",
+    "puntos": 1228,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "HyperSonic",
+    "video": "https://www.youtube.com/watch?v=jp5gMCxP3HM",
+    "id": "30219145",
+    "creador": "ViPriN",
+    "puntos": 1076,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Redemption",
+    "video": "https://www.youtube.com/watch?v=Ka3a3dxSmlk",
+    "id": "66851981",
+    "creador": "Zest",
+    "puntos": 952,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Tung Tung Sahurcles",
+    "video": "https://www.youtube.com/watch?v=tSKiPAQKa7M",
+    "id": "146066774",
+    "creador": "Arraegen",
+    "puntos": 816,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Bangarang",
+    "video": "https://www.youtube.com/watch?v=v6V3QShwAQk",
+    "id": "112515547",
+    "creador": "LP44",
+    "puntos": 776,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "8o X",
+    "video": "https://www.youtube.com/watch?v=mNXs3qxoSCM",
+    "id": "39641092",
+    "creador": "f3lixsram",
+    "puntos": 736,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Nove Cerchi",
+    "video": "https://www.youtube.com/watch?v=MeYapNh-K_k",
+    "id": "96002712",
+    "creador": "LudiumGD",
+    "puntos": 680,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Cataclysm",
+    "video": "https://www.youtube.com/watch?v=yyfmevpOpkQ",
+    "id": "3979721",
+    "creador": "GgB0y",
+    "puntos": 608,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -86,6 +310,45 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "No Survivors",
+    "video": "https://www.youtube.com/watch?v=bYlPLRCpCmE",
+    "id": "132458573",
+    "creador": "Fawxu",
+    "puntos": 424,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "niwa",
+    "video": "https://www.youtube.com/watch?v=8XuF9rjJ0Z8",
+    "id": "87425029",
+    "creador": "Teno",
+    "puntos": 372,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Sweater Weather",
+    "video": "https://www.youtube.com/watch?v=C2p8gdP3yus",
+    "id": "81148582",
+    "creador": "VelYT",
+    "puntos": 240,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Acu",
     "video": "https://youtu.be/cb0pGNFLa-g",
     "id": "61079355",
@@ -95,6 +358,45 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "zZenyth"
+      }
+    ]
+  },
+  {
+    "nombre": "Through The Decay",
+    "video": "https://www.youtube.com/watch?v=vH1sx4XLnHI",
+    "id": "114933189",
+    "creador": "spark",
+    "puntos": 224,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Precipitance",
+    "video": "https://www.youtube.com/watch?v=MWUHH_j280Y",
+    "id": "60197839",
+    "creador": "Extravagon",
+    "puntos": 220,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "rauchkammer",
+    "video": "https://www.youtube.com/watch?v=Yls2tPTswsU",
+    "id": "146399247",
+    "creador": "Devilmine",
+    "puntos": 212,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
       }
     ]
   },
