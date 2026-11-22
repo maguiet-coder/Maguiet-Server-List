@@ -479,6 +479,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Hell",
+    "video": "https://youtu.be/gTtsrzNUJM8",
+    "id": "25696351",
+    "creador": "Serponge",
+    "puntos": 65,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
+  },
+  {
     "nombre": "Sakupen Egg",
     "video": "https://youtu.be/Htie8z4XLR4",
     "id": "58002670",
@@ -806,19 +819,6 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
-      }
-    ]
-  },
-  {
-    "nombre": "Hell",
-    "video": "https://youtu.be/gTtsrzNUJM8",
-    "id": "25696351",
-    "creador": "Serponge",
-    "puntos": 65,
-    "dificultad": "Medium Demon",
-    "leaderboard": [
-      {
-        "jugador": "Aiman89"
       }
     ]
   }
