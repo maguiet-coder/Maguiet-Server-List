@@ -7,6 +7,31 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-22",
   "tipo": "nivel",
+  "texto": "Nuevo nivel: WcropoliX (#2, 3740 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Infinite Inversion (#4, 3528 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Tenth Circle (#5, 3448 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Azurite (royen) (#7, 3264 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Down Bass (#9, 3152 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
   "texto": "Nuevo nivel: aftermath (#5, 2600 pts, Extreme Demon)."
  },
  {
