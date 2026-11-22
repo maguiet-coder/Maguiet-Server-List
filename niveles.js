@@ -781,6 +781,9 @@ const NIVELES = [
       },
       {
         "jugador": "Maguiet"
+      },
+      {
+        "jugador": "Aiman89"
       }
     ]
   },
