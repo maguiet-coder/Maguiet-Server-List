@@ -5,6 +5,121 @@
 
 const CAMBIOS = [
  {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: aftermath (#5, 2600 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: sunburn (#7, 1988 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Convulsing Light (#8, 1924 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: cerebral hemorrhage (#9, 1848 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: In Circles (#10, 1716 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Broken Signal (#11, 1588 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Our Fountain (#12, 1516 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Project alter (#13, 1324 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Crowd Control (#14, 1300 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: TROLLMACHINE (#15, 1228 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: HyperSonic (#16, 1076 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Redemption (#17, 952 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Tung Tung Sahurcles (#18, 816 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Bangarang (#19, 776 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: 8o X (#20, 736 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Nove Cerchi (#21, 680 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Cataclysm (#22, 608 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: No Survivors (#24, 424 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: niwa (#25, 372 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Sweater Weather (#26, 240 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Through The Decay (#28, 224 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Precipitance (#29, 220 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: rauchkammer (#30, 212 pts, Extreme Demon)."
+ },
+ {
   "fecha": "2026-11-21",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Auditory Breaker (#1, 4084 pts, Extreme Demon)."
