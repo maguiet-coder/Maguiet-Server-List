@@ -480,7 +480,7 @@ const NIVELES = [
   },
   {
     "nombre": "Sakupen Egg",
-    "video": "https://youtu.be/JiA1atKYuSU?is=bGhj-eqXHcmzlAhk",
+    "video": "https://youtu.be/Htie8z4XLR4",
     "id": "58002670",
     "creador": "Sivlol",
     "puntos": 60,
