@@ -808,6 +808,19 @@ const NIVELES = [
         "jugador": "Maguiet"
       }
     ]
+  },
+  {
+    "nombre": "Hell",
+    "video": "https://youtu.be/gTtsrzNUJM8",
+    "id": "25696351",
+    "creador": "Serponge",
+    "puntos": 65,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Aiman89"
+      }
+    ]
   }
 ];
 
