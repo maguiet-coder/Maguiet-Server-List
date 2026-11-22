@@ -18,6 +18,19 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "WcropoliX",
+    "video": "https://www.youtube.com/watch?v=kEUbS6X3BQI",
+    "id": "22183448",
+    "creador": "BlassCFB",
+    "puntos": 3740,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Sakupen Hell",
     "video": "https://youtu.be/8kNzhz97mdA",
     "id": "23262780",
@@ -31,11 +44,50 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Infinite Inversion",
+    "video": "https://www.youtube.com/watch?v=6gvP5zfElrs",
+    "id": "102807047",
+    "creador": "fil",
+    "puntos": 3528,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Tenth Circle",
+    "video": "https://www.youtube.com/watch?v=sH78nDOyYyE",
+    "id": "62592746",
+    "creador": "DeniPol",
+    "puntos": 3448,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
     "nombre": "Astrophobia",
     "video": "https://www.youtube.com/watch?v=Fe7mlL-F8Oo",
     "id": "94772024",
     "creador": "Jakalope",
     "puntos": 3348,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Azurite (royen)",
+    "video": "https://www.youtube.com/watch?v=bN6HLttkcXc",
+    "id": "59533451",
+    "creador": "royen",
+    "puntos": 3264,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -54,6 +106,19 @@ const NIVELES = [
       {
         "jugador": "zZenyth"
       },
+      {
+        "jugador": "LeXa [GD]"
+      }
+    ]
+  },
+  {
+    "nombre": "Down Bass",
+    "video": "https://www.youtube.com/watch?v=SSH1AIEs66A",
+    "id": "8147005",
+    "creador": "Exterys Valyrie",
+    "puntos": 3152,
+    "dificultad": "Extreme Demon",
+    "leaderboard": [
       {
         "jugador": "LeXa [GD]"
       }
