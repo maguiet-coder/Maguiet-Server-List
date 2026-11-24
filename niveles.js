@@ -663,6 +663,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -730,6 +733,9 @@ const NIVELES = [
     "leaderboard": [
       {
         "jugador": "Aiman89"
+      },
+      {
+        "jugador": "YtNeux"
       }
     ]
   },
@@ -833,7 +839,7 @@ const NIVELES = [
     "video": "https://youtu.be/VInQkeec188?si=LHSS5O8zU0z81KHY",
     "id": "None",
     "creador": "RobTop",
-    "puntos": 10,
+    "puntos": 13,
     "dificultad": "Easy Demon",
     "leaderboard": [
       {
