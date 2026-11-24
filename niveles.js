@@ -511,6 +511,22 @@ const NIVELES = [
     ]
   },
   {
+    "nombre": "Mechanical Showdown",
+    "video": "https://youtu.be/jTfLxbgexvc?si=0DRrMlVS54tXbpzk",
+    "id": "27786218",
+    "creador": "Tongii",
+    "puntos": 58,
+    "dificultad": "Medium Demon",
+    "leaderboard": [
+      {
+        "jugador": "Anexy"
+      },
+      {
+        "jugador": "YtNeux"
+      }
+    ]
+  },
+  {
     "nombre": "B",
     "video": "https://youtu.be/ohKPqGxotao?si=576g5WnJ3NzL4S6q",
     "id": "34085027",
@@ -861,6 +877,15 @@ const PACKS = [
       "Platinum Adventure",
       "iSpyWithMyLittleEye",
       "iS"
+    ]
+  },
+  {
+    "nombre": "Apocalyptic triology",
+    "puntos": 200,
+    "niveles": [
+      "Bloodbath",
+      "aftermath",
+      "Cataclysm"
     ]
   }
 ];
