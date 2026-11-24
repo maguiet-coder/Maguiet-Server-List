@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-24",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Allegiance (#21, 1100 pts, Extreme Demon)."
+ },
+ {
+  "fecha": "2026-11-24",
   "tipo": "puntos",
   "texto": "Electrodynamix v2: 50 → 54 pts."
  },
