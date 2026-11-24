@@ -7,6 +7,16 @@ const CAMBIOS = [
  {
   "fecha": "2026-11-24",
   "tipo": "puntos",
+  "texto": "Electrodynamix v2: 50 → 54 pts."
+ },
+ {
+  "fecha": "2026-11-24",
+  "tipo": "puntos",
+  "texto": "Bioluminescence: 49 → 53 pts."
+ },
+ {
+  "fecha": "2026-11-24",
+  "tipo": "puntos",
   "texto": "Clubstep: 10 → 13 pts."
  },
  {
