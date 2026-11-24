@@ -271,11 +271,11 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "Allegiance",
-    "video": "https://youtu.be/DUIUHb4AKEs?si=BXM55_298uSDlaOT",
-    "id": "20761188",
-    "creador": "Nikroplays ",
-    "puntos": 1100,
+    "nombre": "HyperSonic",
+    "video": "https://www.youtube.com/watch?v=jp5gMCxP3HM",
+    "id": "30219145",
+    "creador": "ViPriN",
+    "puntos": 1076,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
@@ -284,11 +284,11 @@ const NIVELES = [
     ]
   },
   {
-    "nombre": "HyperSonic",
-    "video": "https://www.youtube.com/watch?v=jp5gMCxP3HM",
-    "id": "30219145",
-    "creador": "ViPriN",
-    "puntos": 1076,
+    "nombre": "Allegiance",
+    "video": "https://youtu.be/DUIUHb4AKEs?si=BXM55_298uSDlaOT",
+    "id": "20761188",
+    "creador": "Nikroplays ",
+    "puntos": 1060,
     "dificultad": "Extreme Demon",
     "leaderboard": [
       {
