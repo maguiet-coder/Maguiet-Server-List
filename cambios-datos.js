@@ -6,6 +6,11 @@
 const CAMBIOS = [
  {
   "fecha": "2026-11-24",
+  "tipo": "puntos",
+  "texto": "Clubstep: 10 → 13 pts."
+ },
+ {
+  "fecha": "2026-11-24",
   "tipo": "nivel",
   "texto": "Nuevo nivel: Mechanical Showdown (#39, 58 pts, Medium Demon)."
  },
