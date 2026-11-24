@@ -5,6 +5,16 @@
 
 const CAMBIOS = [
  {
+  "fecha": "2026-11-24",
+  "tipo": "nivel",
+  "texto": "Nuevo nivel: Mechanical Showdown (#39, 58 pts, Medium Demon)."
+ },
+ {
+  "fecha": "2026-11-24",
+  "tipo": "pack",
+  "texto": "Nuevo pack: Apocalyptic triology (+200 pts por completar Bloodbath, aftermath, Cataclysm)."
+ },
+ {
   "fecha": "2026-11-22",
   "tipo": "puesto",
   "texto": "Hell: sube del puesto #56 al #37."
